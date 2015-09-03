@@ -155,26 +155,21 @@ nav.main-nav {
 }
 
 /* line 1, ../scss/layout/_global_elements.scss */
-::selection {
-  background: red;
+::selection, ::-moz-selection {
+  background: #038cd6;
 }
 
-/* line 2, ../scss/layout/_global_elements.scss */
-::-moz-selection {
-  background: red;
-}
-
-/* line 4, ../scss/layout/_global_elements.scss */
+/* line 5, ../scss/layout/_global_elements.scss */
 * {
   outline: none;
 }
 
-/* line 8, ../scss/layout/_global_elements.scss */
+/* line 9, ../scss/layout/_global_elements.scss */
 html {
   height: 100%;
 }
 
-/* line 12, ../scss/layout/_global_elements.scss */
+/* line 13, ../scss/layout/_global_elements.scss */
 body {
   height: 100%;
   color: #666666;
@@ -184,38 +179,38 @@ body {
   line-height: 21px;
 }
 
-/* line 21, ../scss/layout/_global_elements.scss */
+/* line 22, ../scss/layout/_global_elements.scss */
 a, a:visited, a:active {
   color: #ddd;
   text-decoration: underline;
 }
 
-/* line 26, ../scss/layout/_global_elements.scss */
+/* line 27, ../scss/layout/_global_elements.scss */
 a:hover {
   color: #ddd;
   text-decoration: none;
 }
 
-/* line 33, ../scss/layout/_global_elements.scss */
+/* line 34, ../scss/layout/_global_elements.scss */
 .clearfix:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* line 51, ../scss/layout/_global_elements.scss */
+/* line 52, ../scss/layout/_global_elements.scss */
 .site-wrap {
   min-height: 100%;
   margin-bottom: -300px;
 }
-/* line 55, ../scss/layout/_global_elements.scss */
+/* line 56, ../scss/layout/_global_elements.scss */
 .site-wrap:after {
   content: "";
   display: block;
   height: 300px;
 }
 
-/* line 63, ../scss/layout/_global_elements.scss */
+/* line 64, ../scss/layout/_global_elements.scss */
 .width-holder {
   max-width: 1060px;
   margin: 0 auto;

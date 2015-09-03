@@ -1,5 +1,6 @@
-::selection{ background: red }
-::-moz-selection { background: red }
+::selection, ::-moz-selection { 
+	background: #038cd6; 
+}
 
 *{
 	outline:none;     
