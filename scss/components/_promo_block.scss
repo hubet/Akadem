@@ -1,10 +1,20 @@
 
 
 .promo-block{
-	min-height: 240px;
-	background: $color-red;		
+	width: 100%;
+	min-height: 240px;	
 	max-width: $site-max-width;
-	margin: 0 auto 0 auto;
+	margin: 0 auto 0 auto;	
+	display: table;
+	color:#fff;
+
+	& > div{
+		display: table-cell;
+	}
+
+	.promo-cell1{background: $color-carrot; width: 33.3%;}
+	.promo-cell2{background: $color-rose;   width: 33.3%;}
+	.promo-cell3{background: $color-vine;   width: 33.3%;}
 }
 
 

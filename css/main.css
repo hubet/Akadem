@@ -1,4 +1,17 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,700,900&subset=latin,cyrillic-ext,cyrillic);
+/* line 30, ../scss/_variables.scss */
+.gradient_carrot {
+  background: #ef5f5a;
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2VmNWY1YSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlNzU0NGYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(top, #ef5f5a 0%, #e7544f 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ef5f5a), color-stop(100%, #e7544f));
+  background: -webkit-linear-gradient(top, #ef5f5a 0%, #e7544f 100%);
+  background: -o-linear-gradient(top, #ef5f5a 0%, #e7544f 100%);
+  background: -ms-linear-gradient(top, #ef5f5a 0%, #e7544f 100%);
+  background: linear-gradient(to bottom, #ef5f5a 0%, #e7544f 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ef5f5a', endColorstr='#e7544f',GradientType=0 );
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -221,39 +234,61 @@ a:hover {
 .jumbotrone {
   height: 490px;
   overflow: hidden;
-  background: #a58994;
+  background: #a58994 url("../img/jumbo-bg.jpg") center no-repeat;
+  background-size: cover;
 }
-/* line 8, ../scss/components/_jumbotrone.scss */
+/* line 9, ../scss/components/_jumbotrone.scss */
 .jumbotrone .jumbotrone-info-block {
   margin: 80px 0 0 0;
 }
-/* line 11, ../scss/components/_jumbotrone.scss */
+/* line 12, ../scss/components/_jumbotrone.scss */
 .jumbotrone .jumbotrone-info-block h1 {
   color: #fff;
   font-size: 66px;
   line-height: 66px;
   font-weight: 900;
 }
-/* line 19, ../scss/components/_jumbotrone.scss */
+/* line 20, ../scss/components/_jumbotrone.scss */
 .jumbotrone .jumbotrone-info-block a {
   margin: 15px 0 0 0;
   display: block;
   color: #fff;
 }
-/* line 24, ../scss/components/_jumbotrone.scss */
+/* line 25, ../scss/components/_jumbotrone.scss */
 .jumbotrone .jumbotrone-info-block a:after {
   content: "...";
 }
 
 /* line 3, ../scss/components/_promo_block.scss */
 .promo-block {
+  width: 100%;
   min-height: 240px;
-  background: #d52e4a;
   max-width: 1060px;
   margin: 0 auto 0 auto;
+  display: table;
+  color: #fff;
+}
+/* line 11, ../scss/components/_promo_block.scss */
+.promo-block > div {
+  display: table-cell;
+}
+/* line 15, ../scss/components/_promo_block.scss */
+.promo-block .promo-cell1 {
+  background: #ec5955;
+  width: 33.3%;
+}
+/* line 16, ../scss/components/_promo_block.scss */
+.promo-block .promo-cell2 {
+  background: #d52e4a;
+  width: 33.3%;
+}
+/* line 17, ../scss/components/_promo_block.scss */
+.promo-block .promo-cell3 {
+  background: #bf3e4c;
+  width: 33.3%;
 }
 
-/* line 11, ../scss/components/_promo_block.scss */
+/* line 21, ../scss/components/_promo_block.scss */
 .promo-block-minus-margin {
   margin-top: -45px;
 }

@@ -3,7 +3,8 @@
 .jumbotrone{
 	height: 490px;
 	overflow: hidden; 
-	background: #a58994;
+	background: #a58994 url('../img/jumbo-bg.jpg') center no-repeat;
+	background-size: cover;
 
 	.jumbotrone-info-block{
 		margin: 80px 0 0 0;
@@ -11,7 +12,7 @@
 		h1{
 			color:#fff;
 			font-size: 66px;
-			line-height: 66px;
+			line-height: 66px; 
 			font-weight: 900;			
 		}
 
