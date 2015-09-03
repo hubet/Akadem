@@ -1,0 +1,67 @@
+::selection{ background: red }
+::-moz-selection { background: red }
+
+*{
+	outline:none;     
+}  
+   
+html{	
+	height:100%;
+}
+	
+body{	
+	height: 100%;
+	color: $color-silver-grey;
+	font-size: $normal-font-size;  
+	font-family: $base-font-family;
+	font-weight: $base-font-weight;
+	line-height: $normal-line-height;
+}
+	
+a, a:visited, a:active{
+	color: $anchor-color;
+	text-decoration: underline;
+}
+
+a:hover{
+	color: $anchor-hover-color;
+	text-decoration: none;
+}
+
+
+@mixin clearfix() { 
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+.clearfix { @include clearfix(); }
+
+
+
+
+// ---------------------------------------------------------------
+// Global and main elements
+// ---------------------------------------------------------------
+
+
+// We use it to make sticky footer
+.site-wrap {
+  min-height: 100%;  
+  margin-bottom: -$Footer-height; 
+
+  &:after{
+	content: "";
+	display: block;
+	height: $Footer-height; 
+  }
+}
+
+// To keep max width of the website
+.width-holder{
+	max-width: $site-max-width;
+	margin: 0 auto;
+	position: relative;
+}

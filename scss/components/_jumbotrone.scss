@@ -1,0 +1,19 @@
+
+
+.jumbotrone{
+	height: 490px;
+	overflow: hidden; 
+	background: #a58994;
+
+	.jumbotrone-info-block{
+		margin: 80px 0px 0px 0px;
+
+		h1{
+			color:#fff;
+			font-size: 66px;
+			line-height: 66px;
+			font-weight: 900;
+			margin-bottom: 30px;
+		}
+	}
+}

@@ -1,0 +1,242 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,700,900&subset=latin,cyrillic-ext,cyrillic);
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 6, ../scss/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 27, ../scss/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 31, ../scss/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/*
+ol, ul {
+  list-style: none;
+}
+*/
+/* line 41, ../scss/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 44, ../scss/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/*
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}*/
+/* line 54, ../scss/_reset.scss */
+img {
+  border: 0;
+}
+
+/* line 4, ../scss/layout/_header.scss */
+nav.main-nav {
+  background-color: #222222;
+  height: 120px;
+  position: relative;
+  width: 100%;
+}
+
+/* line 12, ../scss/layout/_header.scss */
+.main-logo {
+  display: block;
+  width: 125px;
+  height: 45px;
+  float: left;
+  margin-top: 28px;
+}
+/* line 20, ../scss/layout/_header.scss */
+.main-logo a {
+  display: block;
+  height: 100%;
+  widows: 100%;
+  text-indent: -99999px;
+  background: url("../img/akademservis-logo.png") no-repeat center;
+  background-size: 100% 100%;
+}
+
+/* line 35, ../scss/layout/_header.scss */
+.main-menu {
+  list-style: none;
+  padding: 50px 0px 0px 95px;
+  float: left;
+}
+/* line 40, ../scss/layout/_header.scss */
+.main-menu li {
+  float: left;
+  margin-right: 37.5px;
+}
+/* line 44, ../scss/layout/_header.scss */
+.main-menu li:last-child {
+  margin-right: 0px;
+}
+/* line 48, ../scss/layout/_header.scss */
+.main-menu li a {
+  font-size: 15px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #fff;
+  text-decoration: none;
+  -webkit-transition: color 0.2s ease;
+  -moz-transition: color 0.2s ease;
+  -ms-transition: color 0.2s ease;
+  -o-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+}
+/* line 56, ../scss/layout/_header.scss */
+.main-menu li a:hover {
+  color: #666666;
+}
+
+/* line 67, ../scss/layout/_header.scss */
+.phone-numbers {
+  list-style: none;
+  padding: 50px 0px 0px 0px;
+  float: right;
+}
+/* line 72, ../scss/layout/_header.scss */
+.phone-numbers li {
+  float: left;
+  margin-left: 21px;
+}
+/* line 76, ../scss/layout/_header.scss */
+.phone-numbers li:first-child {
+  margin-left: 0px;
+}
+/* line 80, ../scss/layout/_header.scss */
+.phone-numbers li a {
+  font-size: 15px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #666666;
+  text-decoration: none;
+  cursor: default;
+}
+
+/* line 4, ../scss/layout/_footer.scss */
+.site-footer {
+  background-color: #222222;
+  height: 300px;
+}
+
+/* line 1, ../scss/layout/_global_elements.scss */
+::selection {
+  background: red;
+}
+
+/* line 2, ../scss/layout/_global_elements.scss */
+::-moz-selection {
+  background: red;
+}
+
+/* line 4, ../scss/layout/_global_elements.scss */
+* {
+  outline: none;
+}
+
+/* line 8, ../scss/layout/_global_elements.scss */
+html {
+  height: 100%;
+}
+
+/* line 12, ../scss/layout/_global_elements.scss */
+body {
+  height: 100%;
+  color: #666666;
+  font-size: 15px;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  line-height: 21px;
+}
+
+/* line 21, ../scss/layout/_global_elements.scss */
+a, a:visited, a:active {
+  color: #ddd;
+  text-decoration: underline;
+}
+
+/* line 26, ../scss/layout/_global_elements.scss */
+a:hover {
+  color: #ddd;
+  text-decoration: none;
+}
+
+/* line 33, ../scss/layout/_global_elements.scss */
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 51, ../scss/layout/_global_elements.scss */
+.site-wrap {
+  min-height: 100%;
+  margin-bottom: -300px;
+}
+/* line 55, ../scss/layout/_global_elements.scss */
+.site-wrap:after {
+  content: "";
+  display: block;
+  height: 300px;
+}
+
+/* line 63, ../scss/layout/_global_elements.scss */
+.width-holder {
+  max-width: 1060px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* line 3, ../scss/components/_jumbotrone.scss */
+.jumbotrone {
+  height: 490px;
+  overflow: hidden;
+  background: #a58994;
+}
+/* line 8, ../scss/components/_jumbotrone.scss */
+.jumbotrone .jumbotrone-info-block {
+  margin: 80px 0px 0px 0px;
+}
+/* line 11, ../scss/components/_jumbotrone.scss */
+.jumbotrone .jumbotrone-info-block h1 {
+  color: #fff;
+  font-size: 66px;
+  line-height: 66px;
+  font-weight: 900;
+  margin-bottom: 30px;
+}

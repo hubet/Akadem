@@ -1,0 +1,89 @@
+// ---------------------------------------------------------------
+// Header
+
+nav.main-nav{
+  background-color: $color-space-black;
+  height: $height-main-nav; 	  
+  position: relative;
+  width: 100%;
+}
+
+
+.main-logo{
+	display: block;
+	width: 125px;
+	height: 45px;
+	float: left;
+	margin-top: 28px;
+
+
+	a{
+		display: block;
+		height: 100%;
+		widows: 100%;
+		text-indent: -99999px;  
+		background: url('../img/akademservis-logo.png') no-repeat center;
+		background-size: 100% 100%;
+	}
+}
+
+
+  
+// ---------------------------------------------------------------
+// main navigation 
+
+.main-menu{ 
+	list-style: none;
+	padding: 50px 0px 0px 95px;	 
+	float: left;
+
+	li{
+		float: left;		
+		margin-right: $normal-font-size * 2.5;
+
+		&:last-child{
+			margin-right: 0px;
+		}
+
+		a{
+			font-size: $normal-font-size;
+			line-height: $normal-line-height; 
+			font-weight: 400; 
+			color: #fff;			
+			text-decoration: none;
+			@include transition(color .2s ease);
+
+			&:hover{
+				color: $color-silver-grey;
+			}
+		}
+	}
+}
+
+
+
+
+
+.phone-numbers{
+	list-style: none;
+	padding: 50px 0px 0px 0px;	 
+	float: right;
+
+	li{
+		float: left;		
+		margin-left: $normal-line-height;
+
+		&:first-child{
+			margin-left: 0px;
+		}
+
+		a{
+			font-size: $normal-font-size;
+			line-height: $normal-line-height; 
+			font-weight: 400; 
+			color: $color-silver-grey;			
+			text-decoration: none;		
+			cursor: default;
+		}
+	}
+}
