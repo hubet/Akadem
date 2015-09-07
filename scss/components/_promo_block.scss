@@ -1,22 +1,23 @@
-
-
-.promo-block{
-	width: 100%;
-	min-height: 240px;	
-	max-width: $site-max-width;
-	margin: 0 auto 0 auto;	
-	display: table;
+.promo-block{	
 	color:#fff;
 
-	& > div{
-		display: table-cell;
+	.promo-cell1{background: $color-carrot; }
+	.promo-cell2{background: $color-rose;   }
+	.promo-cell3{background: $color-vine;   }
+
+	.promo-cell1, .promo-cell2, .promo-cell3{
+		min-height: 240px;
 	}
 
-	.promo-cell1{background: $color-carrot; width: 33.3%;}
-	.promo-cell2{background: $color-rose;   width: 33.3%;}
-	.promo-cell3{background: $color-vine;   width: 33.3%;}
-}
+	a{
+		color:#fff;
 
+		&:hover{
+			color: #fff;
+			text-decoration: none;
+		}
+	}
+}
 
 .promo-block-minus-margin{
 	margin-top: -45px;

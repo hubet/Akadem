@@ -4,6 +4,9 @@
 
 *{
 	outline:none;     
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;	
 }  
    
 html{	
@@ -50,19 +53,13 @@ a:hover{
 
 // We use it to make sticky footer
 .site-wrap {
-  min-height: 100%;  
-  margin-bottom: -$Footer-height; 
+	width: 100%;
+	min-height: 100%;  
+	margin-bottom: -$Footer-height; 
 
-  &:after{
-	content: "";
-	display: block;
-	height: $Footer-height; 
-  }
-}
-
-// To keep max width of the website
-.width-holder{
-	max-width: $site-max-width;
-	margin: 0 auto;
-	position: relative;
+	&:after{
+		content: "";
+		display: block;
+		height: $Footer-height; 
+	}
 }
