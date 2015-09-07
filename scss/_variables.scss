@@ -2,6 +2,7 @@
 
 // ---------------------------------------------------------------
 // Greyscalse
+$color-stone-grey:      #e8e8e8;
 $color-silver-grey:     #666666;
 $color-space-black:     #222222;
 
@@ -21,7 +22,11 @@ $anchor-hover-color:    #384b56;
 // ---------------------------------------------------------------
 // Mesurements
 $Footer-height:         300px;
-$height-main-nav:       120px;   
+$height-main-nav:       120px;  
+
+$main-layout-margin:	40px;
+$medium-layout-margin:	55px;
+$long-layout-margin:	70px;
 
 
 // ---------------------------------------------------------------  
@@ -36,6 +41,18 @@ $xlarge-font-size:      46px;  $xlarge-line-height:    63px;
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,700,900&subset=latin,cyrillic-ext,cyrillic);
 $base-font-family:      'Roboto', Helvetica, Arial, sans-serif;
 $base-font-weight:      normal;
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -1,19 +1,22 @@
+// Most important
 @import  "variables";
 @import  "reset";
 @import  "responsive_mixins";
 @import  "mixins";
+@import  "typography";
  
 // Layout
 @import  "layout/header";  
 @import  "layout/footer";
 @import  "layout/global_elements";
 
-// Components
-@import  "components/jumbotrone"; 
-@import  "components/promo_block";
-
 // Bootstap
 @import  "bootstrap/variables";  
 @import  "bootstrap/mixins/grid";
 @import  "bootstrap/mixins/grid-framework";
 @import  "bootstrap/grid";
+
+// Components
+@import  "components/jumbotrone"; 
+@import  "components/promo_block";
+@import  "components/welcome_message";

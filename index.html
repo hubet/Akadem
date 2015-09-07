@@ -4,6 +4,7 @@
 <head>
 	<title>Akademservis</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href='css/main.css' rel='stylesheet'/>	
 	
 	<script src="http://code.jquery.com/jquery-latest.js"></script>
@@ -19,42 +20,36 @@
 	</script>
 	<![endif]-->
 
-	<!--[if gte IE 9]>
-	  <style type="text/css">
-	    .gradient {
-	       filter: none;
-	    }
-	  </style>
-	<![endif]-->
-
-
 </head>
 <body>
 
 
+	<!-- Site warp for sticky footer -->
 	<div class="site-wrap">
+
+
 
 
 		<!-- Top Navigation --> 
 		<nav class="main-nav">	
-			<div class='container'>				
+			<div class='container'>	
+				<div class="row">			
+					<strong class="main-logo">
+						<a href='#'>Академсервис</a>		
+					</strong>
+					
+					<ul class="main-menu">
+						<li><a href="">Услуги</a></li>
+						<li><a href="">Галерея</a></li>
+						<li><a href="">Контакты</a></li>
+					</ul>	
 
-				<strong class="main-logo">
-					<a href='#'>Академсервис</a>		
-				</strong>
-				
-				<ul class="main-menu">
-					<li><a href="">Услуги</a></li>
-					<li><a href="">Галерея</a></li>
-					<li><a href="">Контакты</a></li>
-				</ul>	
-
-				<ul class="phone-numbers">
-					<li><a href="tel: +380932532853">(093) 253-28-53</a></li>
-					<li><a href="tel: +380988967093">(098) 896-70-93</a></li>
-					<li><a href="tel: +380994916684">(099) 491-66-84</a></li>
-				</ul>				
-
+					<ul class="phone-numbers">
+						<li><a href="tel: +380932532853">(093) 253-28-53</a></li>
+						<li><a href="tel: +380988967093">(098) 896-70-93</a></li>
+						<li><a href="tel: +380994916684">(099) 491-66-84</a></li>
+					</ul>				
+				</div>
 			</div>	
 		</nav>
 		<!-- End Top Navigation --> 
@@ -66,37 +61,73 @@
 		<!-- Jumbotrone --> 
 		<div class='jumbotrone'>
 			<div class='container'>	
-
-				<div class='jumbotrone-info-block'>
-					<h1>Мантии для <br/>выпускников</h1>
-					<a href="#">Посмотреть другие ролики</a>
+				<div class="row">				
+					<div class='jumbotrone-info-block'>
+						<h1>Мантии для <br/>выпускников</h1>
+						<a href="#">Посмотреть другие ролики</a>
+					</div>
 				</div>
-
 			</div>
 		</div>
 		<!-- End Jumbotrone --> 
 
 
-		<!-- Promo block --> 
-		
-		<div class="container promo-block promo-block-minus-margin">	
-			<div class="row">
-				<div class="promo-cell1 col-md-4">
-					<a href=''>Купить</a>				
+
+
+
+		<!-- Promo block --> 		
+		<div class="container promo-block promo-block-minus-margin">
+			<div class="row row-eq-height">
+				<div class="promo-cell1 col-sm-4">
+					<a href='' class='link-to-page'>Купить</a>	
+					<span class='price'>249грн.</span>		
+					<p>Покупайте мантии для выпусков магистров, бакалавров и специалистов в нашем магазине</p>	
 				</div>
-				<div class="promo-cell2 col-md-4">
-					<a href=''>Прокат</a>				
+				<div class="promo-cell2 col-sm-4">
+					<a href='' class='link-to-page'>Прокат</a>				
+					<span class='price'>80грн.</span>
+					<p>Получите скидки и бесплатную доставку при групповом заказе мантий.</p>
 				</div>
-				<div class="promo-cell3 col-md-4">
-					<a href=''>Пошив</a>				
+				<div class="promo-cell3 col-sm-4">
+					<a href='' class='link-to-page'>Пошив</a>
+					<span class='price'>269грн.</span>	
+					<p>Мы шьем мантии любого фасона, размера и цвета.</p>
 				</div>
 			</div>
-		</div>
-		
+		</div>		
 		<!-- End Promo Block -->  
 
 
+		<!-- Welcome Message Block -->  
+		<div class="container">
+			<div class="row">
+				<h3 class="welcome-message align-center text-center">
+					Наш сервис намерен превратить вручение дипломов<br/>в настоящую церемонию для выпускников...
+				</h3>
+			</div>
+		</div>
+		<!-- End Welcome Message Block -->  
+
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4">
+					<strong>Скидки для групп</strong>
+					<p>Всевозможные скидки и дополнительные сервисы при групповых заказах.</p>
+				</div>
+				<div class="col-sm-4">
+					<strong>Большой выбор мантий</strong>
+					<p>Мантии для выпускников идут в нескольких размерах, цветах и фасонах.</p>
+				</div>
+				<div class="col-sm-4">
+					<strong>Доставка по Украине</strong>
+					<p>Собственная курьерская служба позволяет доставлять мантии в любой город вовремя.</p>
+				</div>
+			</div>
+		</div>		
+
+
 	</div>
+	<!-- End Site Warp --> 
 
 
 

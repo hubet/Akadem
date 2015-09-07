@@ -64,6 +64,44 @@ img {
   border: 0;
 }
 
+/* line 49, ../scss/_typography.scss */
+h3 {
+  font-weight: 300;
+  font-size: 29px;
+  line-height: 41px;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+}
+
+/* line 53, ../scss/_typography.scss */
+strong {
+  font-weight: bolder;
+}
+
+/* line 59, ../scss/_typography.scss */
+.text-left {
+  text-align: left;
+}
+
+/* line 60, ../scss/_typography.scss */
+.text-right {
+  text-align: right;
+}
+
+/* line 61, ../scss/_typography.scss */
+.text-center {
+  text-align: center;
+}
+
+/* line 62, ../scss/_typography.scss */
+.text-justify {
+  text-align: justify;
+}
+
+/* line 63, ../scss/_typography.scss */
+.text-nowrap {
+  white-space: nowrap;
+}
+
 /* line 4, ../scss/layout/_header.scss */
 nav.main-nav {
   background-color: #222222;
@@ -213,77 +251,12 @@ a:hover {
   height: 300px;
 }
 
-/* line 3, ../scss/components/_jumbotrone.scss */
-.jumbotrone {
-  height: 490px;
-  width: 100%;
-  overflow: hidden;
-  background: #a58994 url("../img/jumbo-bg.jpg") center no-repeat;
-  background-size: cover;
-}
-/* line 10, ../scss/components/_jumbotrone.scss */
-.jumbotrone .jumbotrone-info-block {
-  margin: 80px 0 0 0;
-}
-/* line 13, ../scss/components/_jumbotrone.scss */
-.jumbotrone .jumbotrone-info-block h1 {
-  color: #fff;
-  font-size: 66px;
-  line-height: 66px;
-  font-weight: 900;
-}
-/* line 21, ../scss/components/_jumbotrone.scss */
-.jumbotrone .jumbotrone-info-block a {
-  margin: 15px 0 0 0;
-  display: block;
-  color: #fff;
-}
-/* line 26, ../scss/components/_jumbotrone.scss */
-.jumbotrone .jumbotrone-info-block a:after {
-  content: "...";
-}
-
-/* line 1, ../scss/components/_promo_block.scss */
-.promo-block {
-  color: #fff;
-}
-/* line 4, ../scss/components/_promo_block.scss */
-.promo-block .promo-cell1 {
-  background: #ec5955;
-}
-/* line 5, ../scss/components/_promo_block.scss */
-.promo-block .promo-cell2 {
-  background: #d52e4a;
-}
-/* line 6, ../scss/components/_promo_block.scss */
-.promo-block .promo-cell3 {
-  background: #bf3e4c;
-}
-/* line 8, ../scss/components/_promo_block.scss */
-.promo-block .promo-cell1, .promo-block .promo-cell2, .promo-block .promo-cell3 {
-  min-height: 240px;
-}
-/* line 12, ../scss/components/_promo_block.scss */
-.promo-block a {
-  color: #fff;
-}
-/* line 15, ../scss/components/_promo_block.scss */
-.promo-block a:hover {
-  color: #fff;
-  text-decoration: none;
-}
-
-/* line 22, ../scss/components/_promo_block.scss */
-.promo-block-minus-margin {
-  margin-top: -45px;
-}
-
 /* line 10, ../scss/bootstrap/_grid.scss */
 .container {
   margin-right: auto;
   margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 /* line 37, ../scss/layout/_global_elements.scss */
 .container:after {
@@ -294,19 +267,19 @@ a:hover {
 @media (min-width: 768px) {
   /* line 10, ../scss/bootstrap/_grid.scss */
   .container {
-    width: 750px;
+    width: 800px;
   }
 }
 @media (min-width: 992px) {
   /* line 10, ../scss/bootstrap/_grid.scss */
   .container {
-    width: 970px;
+    width: 1020px;
   }
 }
 @media (min-width: 1200px) {
   /* line 10, ../scss/bootstrap/_grid.scss */
   .container {
-    width: 1170px;
+    width: 1120px;
   }
 }
 
@@ -314,8 +287,8 @@ a:hover {
 .container-fluid {
   margin-right: auto;
   margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 /* line 37, ../scss/layout/_global_elements.scss */
 .container-fluid:after {
@@ -326,8 +299,8 @@ a:hover {
 
 /* line 39, ../scss/bootstrap/_grid.scss */
 .row {
-  margin-left: -15px;
-  margin-right: -15px;
+  margin-left: -40px;
+  margin-right: -40px;
 }
 /* line 37, ../scss/layout/_global_elements.scss */
 .row:after {
@@ -340,8 +313,8 @@ a:hover {
 .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
   position: relative;
   min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 /* line 27, ../scss/bootstrap/mixins/_grid-framework.scss */
@@ -1386,4 +1359,99 @@ a:hover {
   .col-lg-offset-12 {
     margin-left: 100%;
   }
+}
+/* line 3, ../scss/components/_jumbotrone.scss */
+.jumbotrone {
+  height: 490px;
+  width: 100%;
+  overflow: hidden;
+  background: #a58994 url("../img/jumbo-bg.jpg") center no-repeat;
+  background-size: cover;
+}
+/* line 10, ../scss/components/_jumbotrone.scss */
+.jumbotrone .jumbotrone-info-block {
+  margin: 80px 0 0 40px;
+}
+/* line 13, ../scss/components/_jumbotrone.scss */
+.jumbotrone .jumbotrone-info-block h1 {
+  color: #fff;
+  font-size: 66px;
+  line-height: 66px;
+  font-weight: 900;
+}
+/* line 20, ../scss/components/_jumbotrone.scss */
+.jumbotrone .jumbotrone-info-block a {
+  margin: 15px 0 0 0;
+  display: inline-block;
+  color: #fff;
+}
+/* line 25, ../scss/components/_jumbotrone.scss */
+.jumbotrone .jumbotrone-info-block a:after {
+  content: "...";
+}
+
+/* line 1, ../scss/components/_promo_block.scss */
+.promo-block {
+  color: #fff;
+}
+/* line 4, ../scss/components/_promo_block.scss */
+.promo-block .promo-cell1, .promo-block .promo-cell2, .promo-block .promo-cell3 {
+  padding: 32px 40px 32px 40px;
+}
+/* line 8, ../scss/components/_promo_block.scss */
+.promo-block .promo-cell1 {
+  background: #ec5955;
+}
+/* line 9, ../scss/components/_promo_block.scss */
+.promo-block .promo-cell2 {
+  background: #d52e4a;
+}
+/* line 10, ../scss/components/_promo_block.scss */
+.promo-block .promo-cell3 {
+  background: #bf3e4c;
+}
+/* line 12, ../scss/components/_promo_block.scss */
+.promo-block a.link-to-page {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid #fff;
+  font-weight: 300;
+  font-size: 23px;
+  line-height: 33px;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+}
+/* line 18, ../scss/components/_promo_block.scss */
+.promo-block a.link-to-page:hover {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 0px;
+}
+/* line 25, ../scss/components/_promo_block.scss */
+.promo-block .price {
+  display: block;
+  margin-top: -5px;
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 63px;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+}
+/* line 31, ../scss/components/_promo_block.scss */
+.promo-block p {
+  margin-top: 15px;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 21px;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+}
+
+/* line 37, ../scss/components/_promo_block.scss */
+.promo-block-minus-margin {
+  margin: -45px auto 70px auto;
+}
+
+/* line 2, ../scss/components/_welcome_message.scss */
+.welcome-message {
+  border-bottom: 1px solid #e8e8e8;
+  padding-bottom: 32px;
+  margin-bottom: 55px;
 }

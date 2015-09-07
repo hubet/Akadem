@@ -1,0 +1,65 @@
+
+@mixin normal-font-size($weight: $base-font-weight) {
+  font-weight: $weight;
+  font-size:   $normal-font-size;
+  line-height: $normal-line-height;
+  font-family: $base-font-family;
+}
+
+@mixin xnormal-font-size($weight: $base-font-weight) {
+  font-weight: $weight;
+  font-size:   $xnormal-font-size;
+  line-height: $xnormal-line-height;
+  font-family: $base-font-family;
+}
+
+@mixin big-font-size($weight: $base-font-weight) {
+  font-weight: $weight;
+  font-size:   $big-font-size;
+  line-height: $big-line-height;
+  font-family: $base-font-family;
+}
+
+@mixin xbig-font-size($weight: $base-font-weight) {
+  font-weight: $weight;
+  font-size:   $xbig-font-size;
+  line-height: $xbig-line-height;
+  font-family: $base-font-family;
+}
+
+@mixin large-font-size($weight: $base-font-weight) {
+  font-weight: $weight;
+  font-size:   $large-font-size;
+  line-height: $large-line-height;
+  font-family: $base-font-family;
+}
+
+@mixin xlarge-font-size($weight: $base-font-weight) {
+  font-weight: $weight;
+  font-size:   $xlarge-font-size;
+  line-height: $xlarge-line-height;
+  font-family: $base-font-family;
+}
+
+
+
+
+
+
+h3 {
+  @include xbig-font-size(300);
+}
+
+strong{
+  font-weight: bolder;
+}
+
+
+// Alignment
+.text-left           { text-align: left; }
+.text-right          { text-align: right; }
+.text-center         { text-align: center; }
+.text-justify        { text-align: justify; }
+.text-nowrap         { white-space: nowrap; }
+
+
