@@ -4,17 +4,17 @@
 @import  "responsive_mixins";
 @import  "mixins";
 @import  "typography";
- 
-// Layout
-@import  "layout/header";  
-@import  "layout/footer";
-@import  "layout/global_elements";
 
 // Bootstap
 @import  "bootstrap/variables";  
 @import  "bootstrap/mixins/grid";
 @import  "bootstrap/mixins/grid-framework";
 @import  "bootstrap/grid";
+ 
+// Layout
+@import  "layout/header";  
+@import  "layout/footer";
+@import  "layout/global_elements";
 
 // Components
 @import  "components/jumbotrone"; 

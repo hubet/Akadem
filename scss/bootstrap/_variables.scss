@@ -332,8 +332,8 @@ $screen-md-max:              ($screen-lg-min - 1) !default;
 //** Number of columns in the grid.
 $grid-columns:              12 !default;
 //** Padding between columns. Gets divided in half for the left and right.
-$grid-gutter-width:         $main-layout-margin*2 !default;    //******** Edited by me (HUBET)
-// Navbar collapse
+$grid-gutter-width:          30 !default;    //******** Edited by me (HUBET)  $main-layout-margin*2
+
 //** Point at which the navbar becomes uncollapsed.
 $grid-float-breakpoint:     $screen-sm-min !default;
 //** Point at which the navbar begins collapsing.
@@ -355,7 +355,7 @@ $container-desktop:            (940px + $grid-gutter-width) !default;
 $container-md:                 $container-desktop !default;
 
 // Large screen / wide desktop
-$container-large-desktop:      (1040px + $grid-gutter-width) !default;
+$container-large-desktop:      (1140px + $grid-gutter-width) !default;
 //** For `$screen-lg-min` and up.
 $container-lg:                 $container-large-desktop !default;
 

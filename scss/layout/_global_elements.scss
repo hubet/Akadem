@@ -15,11 +15,9 @@ html{
 	
 body{	
 	height: 100%;
+	min-width: 320px;
 	color: $color-silver-grey;
-	font-size: $normal-font-size;  
-	font-family: $base-font-family;
-	font-weight: $base-font-weight;
-	line-height: $normal-line-height;
+	font: #{$normal-font-size}/#{$normal-line-height} $base-font-family;
 }
 	
 a, a:visited, a:active{
@@ -32,16 +30,7 @@ a:hover{
 	text-decoration: none;
 }
 
-
-@mixin clearfix() { 
-    &:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-}
-
-.clearfix { @include clearfix(); }
+.clearfix { @include clearfix(); } 
 
 
 
@@ -62,4 +51,9 @@ a:hover{
 		display: block;
 		height: $Footer-height; 
 	}
+
+	/*.container {
+		width: 100%;
+		max-width: 1060px;
+	}*/
 }

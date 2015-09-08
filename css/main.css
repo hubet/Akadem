@@ -102,184 +102,38 @@ strong {
   white-space: nowrap;
 }
 
-/* line 4, ../scss/layout/_header.scss */
-nav.main-nav {
-  background-color: #222222;
-  height: 120px;
-  position: relative;
-}
-
-/* line 11, ../scss/layout/_header.scss */
-.main-logo {
-  display: block;
-  width: 125px;
-  height: 45px;
-  float: left;
-  margin-top: 28px;
-}
-/* line 19, ../scss/layout/_header.scss */
-.main-logo a {
-  display: block;
-  height: 100%;
-  widows: 100%;
-  text-indent: -99999px;
-  background: url("../img/akademservis-logo.png") no-repeat center;
-  background-size: 100% 100%;
-}
-
-/* line 34, ../scss/layout/_header.scss */
-.main-menu {
-  list-style: none;
-  padding: 50px 0px 0px 95px;
-  float: left;
-}
-/* line 39, ../scss/layout/_header.scss */
-.main-menu li {
-  float: left;
-  margin-right: 37.5px;
-}
-/* line 43, ../scss/layout/_header.scss */
-.main-menu li:last-child {
-  margin-right: 0px;
-}
-/* line 47, ../scss/layout/_header.scss */
-.main-menu li a {
-  font-size: 15px;
-  line-height: 21px;
-  font-weight: 400;
-  color: #fff;
-  text-decoration: none;
-  -webkit-transition: color 0.2s ease;
-  -moz-transition: color 0.2s ease;
-  -ms-transition: color 0.2s ease;
-  -o-transition: color 0.2s ease;
-  transition: color 0.2s ease;
-}
-/* line 55, ../scss/layout/_header.scss */
-.main-menu li a:hover {
-  color: #666666;
-}
-
-/* line 66, ../scss/layout/_header.scss */
-.phone-numbers {
-  list-style: none;
-  padding: 50px 0px 0px 0px;
-  float: right;
-}
-/* line 71, ../scss/layout/_header.scss */
-.phone-numbers li {
-  float: left;
-  margin-left: 21px;
-}
-/* line 75, ../scss/layout/_header.scss */
-.phone-numbers li:first-child {
-  margin-left: 0px;
-}
-/* line 79, ../scss/layout/_header.scss */
-.phone-numbers li a {
-  font-size: 15px;
-  line-height: 21px;
-  font-weight: 400;
-  color: #666666;
-  text-decoration: none;
-  cursor: default;
-}
-
-/* line 4, ../scss/layout/_footer.scss */
-.site-footer {
-  background-color: #222222;
-  height: 300px;
-}
-
-/* line 1, ../scss/layout/_global_elements.scss */
-::selection, ::-moz-selection {
-  background: #038cd6;
-}
-
-/* line 5, ../scss/layout/_global_elements.scss */
-* {
-  outline: none;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-}
-
-/* line 12, ../scss/layout/_global_elements.scss */
-html {
-  height: 100%;
-}
-
-/* line 16, ../scss/layout/_global_elements.scss */
-body {
-  height: 100%;
-  color: #666666;
-  font-size: 15px;
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
-  font-weight: normal;
-  line-height: 21px;
-}
-
-/* line 25, ../scss/layout/_global_elements.scss */
-a, a:visited, a:active {
-  color: #2c7fac;
-  text-decoration: underline;
-}
-
-/* line 30, ../scss/layout/_global_elements.scss */
-a:hover {
-  color: #384b56;
-  text-decoration: none;
-}
-
-/* line 37, ../scss/layout/_global_elements.scss */
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* line 55, ../scss/layout/_global_elements.scss */
-.site-wrap {
-  width: 100%;
-  min-height: 100%;
-  margin-bottom: -300px;
-}
-/* line 60, ../scss/layout/_global_elements.scss */
-.site-wrap:after {
-  content: "";
-  display: block;
-  height: 300px;
-}
-
 /* line 10, ../scss/bootstrap/_grid.scss */
 .container {
   margin-right: auto;
   margin-left: auto;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 15;
+  padding-right: 15;
 }
-/* line 37, ../scss/layout/_global_elements.scss */
-.container:after {
-  content: "";
+/* line 11, ../scss/_mixins.scss */
+.container:before, .container:after {
+  content: " ";
   display: table;
+}
+/* line 16, ../scss/_mixins.scss */
+.container:after {
   clear: both;
 }
 @media (min-width: 768px) {
   /* line 10, ../scss/bootstrap/_grid.scss */
   .container {
-    width: 800px;
+    width: 750px;
   }
 }
 @media (min-width: 992px) {
   /* line 10, ../scss/bootstrap/_grid.scss */
   .container {
-    width: 1020px;
+    width: 970px;
   }
 }
 @media (min-width: 1200px) {
   /* line 10, ../scss/bootstrap/_grid.scss */
   .container {
-    width: 1120px;
+    width: 1170px;
   }
 }
 
@@ -287,25 +141,31 @@ a:hover {
 .container-fluid {
   margin-right: auto;
   margin-left: auto;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 15;
+  padding-right: 15;
 }
-/* line 37, ../scss/layout/_global_elements.scss */
-.container-fluid:after {
-  content: "";
+/* line 11, ../scss/_mixins.scss */
+.container-fluid:before, .container-fluid:after {
+  content: " ";
   display: table;
+}
+/* line 16, ../scss/_mixins.scss */
+.container-fluid:after {
   clear: both;
 }
 
 /* line 39, ../scss/bootstrap/_grid.scss */
 .row {
-  margin-left: -40px;
-  margin-right: -40px;
+  margin-left: -15;
+  margin-right: -15;
 }
-/* line 37, ../scss/layout/_global_elements.scss */
-.row:after {
-  content: "";
+/* line 11, ../scss/_mixins.scss */
+.row:before, .row:after {
+  content: " ";
   display: table;
+}
+/* line 16, ../scss/_mixins.scss */
+.row:after {
   clear: both;
 }
 
@@ -313,8 +173,8 @@ a:hover {
 .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
   position: relative;
   min-height: 1px;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 15;
+  padding-right: 15;
 }
 
 /* line 27, ../scss/bootstrap/mixins/_grid-framework.scss */
@@ -1360,6 +1220,164 @@ a:hover {
     margin-left: 100%;
   }
 }
+/* line 4, ../scss/layout/_header.scss */
+nav.main-nav {
+  background-color: #222222;
+  height: 120px;
+  position: relative;
+}
+
+/* line 11, ../scss/layout/_header.scss */
+.main-logo {
+  display: block;
+  width: 125px;
+  height: 45px;
+  float: left;
+  margin-top: 28px;
+}
+/* line 19, ../scss/layout/_header.scss */
+.main-logo a {
+  display: block;
+  height: 100%;
+  widows: 100%;
+  text-indent: -99999px;
+  background: url("../img/akademservis-logo.png") no-repeat center;
+  background-size: 100% 100%;
+}
+
+/* line 34, ../scss/layout/_header.scss */
+.main-menu {
+  list-style: none;
+  padding: 50px 0px 0px 95px;
+  float: left;
+}
+/* line 39, ../scss/layout/_header.scss */
+.main-menu li {
+  float: left;
+  margin-right: 37.5px;
+}
+/* line 43, ../scss/layout/_header.scss */
+.main-menu li:last-child {
+  margin-right: 0px;
+}
+/* line 47, ../scss/layout/_header.scss */
+.main-menu li a {
+  font-size: 15px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #fff;
+  text-decoration: none;
+  -webkit-transition: color 0.2s ease;
+  -moz-transition: color 0.2s ease;
+  -ms-transition: color 0.2s ease;
+  -o-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+}
+/* line 55, ../scss/layout/_header.scss */
+.main-menu li a:hover {
+  color: #666666;
+}
+
+/* line 66, ../scss/layout/_header.scss */
+.phone-numbers {
+  list-style: none;
+  padding: 50px 0px 0px 0px;
+  float: right;
+}
+/* line 71, ../scss/layout/_header.scss */
+.phone-numbers li {
+  float: left;
+  margin-left: 21px;
+}
+/* line 75, ../scss/layout/_header.scss */
+.phone-numbers li:first-child {
+  margin-left: 0px;
+}
+/* line 79, ../scss/layout/_header.scss */
+.phone-numbers li a {
+  font-size: 15px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #666666;
+  text-decoration: none;
+  cursor: default;
+}
+
+/* line 4, ../scss/layout/_footer.scss */
+.site-footer {
+  background-color: #222222;
+  height: 300px;
+  /*.container {
+  	width: 100%;
+  	max-width: 1060px;
+  }*/
+}
+
+/* line 1, ../scss/layout/_global_elements.scss */
+::selection, ::-moz-selection {
+  background: #038cd6;
+}
+
+/* line 5, ../scss/layout/_global_elements.scss */
+* {
+  outline: none;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+/* line 12, ../scss/layout/_global_elements.scss */
+html {
+  height: 100%;
+}
+
+/* line 16, ../scss/layout/_global_elements.scss */
+body {
+  height: 100%;
+  min-width: 320px;
+  color: #666666;
+  font: 15px/21px "Roboto", Helvetica, Arial, sans-serif;
+}
+
+/* line 23, ../scss/layout/_global_elements.scss */
+a, a:visited, a:active {
+  color: #2c7fac;
+  text-decoration: underline;
+}
+
+/* line 28, ../scss/layout/_global_elements.scss */
+a:hover {
+  color: #384b56;
+  text-decoration: none;
+}
+
+/* line 11, ../scss/_mixins.scss */
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+/* line 16, ../scss/_mixins.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 44, ../scss/layout/_global_elements.scss */
+.site-wrap {
+  width: 100%;
+  min-height: 100%;
+  margin-bottom: -300px;
+  /*.container {
+  	width: 100%;
+  	max-width: 1060px;
+  }*/
+}
+/* line 49, ../scss/layout/_global_elements.scss */
+.site-wrap:after {
+  content: "";
+  display: block;
+  height: 300px;
+}
+
 /* line 3, ../scss/components/_jumbotrone.scss */
 .jumbotrone {
   height: 490px;
@@ -1370,7 +1388,7 @@ a:hover {
 }
 /* line 10, ../scss/components/_jumbotrone.scss */
 .jumbotrone .jumbotrone-info-block {
-  margin: 80px 0 0 40px;
+  margin: 80px 40px 0 40px;
 }
 /* line 13, ../scss/components/_jumbotrone.scss */
 .jumbotrone .jumbotrone-info-block h1 {
