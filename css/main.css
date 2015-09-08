@@ -102,6 +102,165 @@ strong {
   white-space: nowrap;
 }
 
+/* line 4, ../scss/layout/_header.scss */
+nav.main-nav {
+  background-color: #222222;
+  height: 120px;
+  position: relative;
+}
+
+/* line 11, ../scss/layout/_header.scss */
+.main-logo {
+  display: block;
+  width: 125px;
+  height: 45px;
+  float: left;
+  margin-top: 28px;
+}
+/* line 19, ../scss/layout/_header.scss */
+.main-logo a {
+  display: block;
+  height: 100%;
+  widows: 100%;
+  text-indent: -99999px;
+  background: url("../img/akademservis-logo.png") no-repeat center;
+  background-size: 100% 100%;
+}
+
+/* line 34, ../scss/layout/_header.scss */
+.main-menu {
+  list-style: none;
+  padding: 50px 0px 0px 95px;
+  float: left;
+}
+/* line 39, ../scss/layout/_header.scss */
+.main-menu li {
+  float: left;
+  margin-right: 37.5px;
+}
+/* line 43, ../scss/layout/_header.scss */
+.main-menu li:last-child {
+  margin-right: 0px;
+}
+/* line 47, ../scss/layout/_header.scss */
+.main-menu li a {
+  font-size: 15px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #fff;
+  text-decoration: none;
+  -webkit-transition: color 0.2s ease;
+  -moz-transition: color 0.2s ease;
+  -ms-transition: color 0.2s ease;
+  -o-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+}
+/* line 55, ../scss/layout/_header.scss */
+.main-menu li a:hover {
+  color: #666666;
+}
+
+/* line 66, ../scss/layout/_header.scss */
+.phone-numbers {
+  list-style: none;
+  padding: 50px 0px 0px 0px;
+  float: right;
+}
+/* line 71, ../scss/layout/_header.scss */
+.phone-numbers li {
+  float: left;
+  margin-left: 21px;
+}
+/* line 75, ../scss/layout/_header.scss */
+.phone-numbers li:first-child {
+  margin-left: 0px;
+}
+/* line 79, ../scss/layout/_header.scss */
+.phone-numbers li a {
+  font-size: 15px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #666666;
+  text-decoration: none;
+  cursor: default;
+}
+
+/* line 4, ../scss/layout/_footer.scss */
+.site-footer {
+  background-color: #222222;
+  height: 300px;
+  /*.container {
+  	width: 100%;
+  	max-width: 1060px;
+  }*/
+}
+
+/* line 1, ../scss/layout/_global_elements.scss */
+::selection, ::-moz-selection {
+  background: #038cd6;
+}
+
+/* line 5, ../scss/layout/_global_elements.scss */
+* {
+  outline: none;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+/* line 12, ../scss/layout/_global_elements.scss */
+html {
+  height: 100%;
+}
+
+/* line 16, ../scss/layout/_global_elements.scss */
+body {
+  height: 100%;
+  min-width: 320px;
+  color: #666666;
+  font: 15px/21px "Roboto", Helvetica, Arial, sans-serif;
+}
+
+/* line 23, ../scss/layout/_global_elements.scss */
+a, a:visited, a:active {
+  color: #2c7fac;
+  text-decoration: underline;
+}
+
+/* line 28, ../scss/layout/_global_elements.scss */
+a:hover {
+  color: #384b56;
+  text-decoration: none;
+}
+
+/* line 11, ../scss/_mixins.scss */
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+/* line 16, ../scss/_mixins.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 44, ../scss/layout/_global_elements.scss */
+.site-wrap {
+  width: 100%;
+  min-height: 100%;
+  margin-bottom: -300px;
+}
+/* line 49, ../scss/layout/_global_elements.scss */
+.site-wrap:after {
+  content: "";
+  display: block;
+  height: 300px;
+}
+
+/* line 56, ../scss/layout/_global_elements.scss */
+.container {
+  padding: 0 25px 0 25px;
+}
+
 /* line 10, ../scss/bootstrap/_grid.scss */
 .container {
   margin-right: auto;
@@ -1220,164 +1379,6 @@ strong {
     margin-left: 100%;
   }
 }
-/* line 4, ../scss/layout/_header.scss */
-nav.main-nav {
-  background-color: #222222;
-  height: 120px;
-  position: relative;
-}
-
-/* line 11, ../scss/layout/_header.scss */
-.main-logo {
-  display: block;
-  width: 125px;
-  height: 45px;
-  float: left;
-  margin-top: 28px;
-}
-/* line 19, ../scss/layout/_header.scss */
-.main-logo a {
-  display: block;
-  height: 100%;
-  widows: 100%;
-  text-indent: -99999px;
-  background: url("../img/akademservis-logo.png") no-repeat center;
-  background-size: 100% 100%;
-}
-
-/* line 34, ../scss/layout/_header.scss */
-.main-menu {
-  list-style: none;
-  padding: 50px 0px 0px 95px;
-  float: left;
-}
-/* line 39, ../scss/layout/_header.scss */
-.main-menu li {
-  float: left;
-  margin-right: 37.5px;
-}
-/* line 43, ../scss/layout/_header.scss */
-.main-menu li:last-child {
-  margin-right: 0px;
-}
-/* line 47, ../scss/layout/_header.scss */
-.main-menu li a {
-  font-size: 15px;
-  line-height: 21px;
-  font-weight: 400;
-  color: #fff;
-  text-decoration: none;
-  -webkit-transition: color 0.2s ease;
-  -moz-transition: color 0.2s ease;
-  -ms-transition: color 0.2s ease;
-  -o-transition: color 0.2s ease;
-  transition: color 0.2s ease;
-}
-/* line 55, ../scss/layout/_header.scss */
-.main-menu li a:hover {
-  color: #666666;
-}
-
-/* line 66, ../scss/layout/_header.scss */
-.phone-numbers {
-  list-style: none;
-  padding: 50px 0px 0px 0px;
-  float: right;
-}
-/* line 71, ../scss/layout/_header.scss */
-.phone-numbers li {
-  float: left;
-  margin-left: 21px;
-}
-/* line 75, ../scss/layout/_header.scss */
-.phone-numbers li:first-child {
-  margin-left: 0px;
-}
-/* line 79, ../scss/layout/_header.scss */
-.phone-numbers li a {
-  font-size: 15px;
-  line-height: 21px;
-  font-weight: 400;
-  color: #666666;
-  text-decoration: none;
-  cursor: default;
-}
-
-/* line 4, ../scss/layout/_footer.scss */
-.site-footer {
-  background-color: #222222;
-  height: 300px;
-  /*.container {
-  	width: 100%;
-  	max-width: 1060px;
-  }*/
-}
-
-/* line 1, ../scss/layout/_global_elements.scss */
-::selection, ::-moz-selection {
-  background: #038cd6;
-}
-
-/* line 5, ../scss/layout/_global_elements.scss */
-* {
-  outline: none;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-}
-
-/* line 12, ../scss/layout/_global_elements.scss */
-html {
-  height: 100%;
-}
-
-/* line 16, ../scss/layout/_global_elements.scss */
-body {
-  height: 100%;
-  min-width: 320px;
-  color: #666666;
-  font: 15px/21px "Roboto", Helvetica, Arial, sans-serif;
-}
-
-/* line 23, ../scss/layout/_global_elements.scss */
-a, a:visited, a:active {
-  color: #2c7fac;
-  text-decoration: underline;
-}
-
-/* line 28, ../scss/layout/_global_elements.scss */
-a:hover {
-  color: #384b56;
-  text-decoration: none;
-}
-
-/* line 11, ../scss/_mixins.scss */
-.clearfix:before, .clearfix:after {
-  content: " ";
-  display: table;
-}
-/* line 16, ../scss/_mixins.scss */
-.clearfix:after {
-  clear: both;
-}
-
-/* line 44, ../scss/layout/_global_elements.scss */
-.site-wrap {
-  width: 100%;
-  min-height: 100%;
-  margin-bottom: -300px;
-  /*.container {
-  	width: 100%;
-  	max-width: 1060px;
-  }*/
-}
-/* line 49, ../scss/layout/_global_elements.scss */
-.site-wrap:after {
-  content: "";
-  display: block;
-  height: 300px;
-}
-
 /* line 3, ../scss/components/_jumbotrone.scss */
 .jumbotrone {
   height: 490px;
@@ -1388,7 +1389,7 @@ a:hover {
 }
 /* line 10, ../scss/components/_jumbotrone.scss */
 .jumbotrone .jumbotrone-info-block {
-  margin: 80px 40px 0 40px;
+  margin: 64px 40px 0 40px;
 }
 /* line 13, ../scss/components/_jumbotrone.scss */
 .jumbotrone .jumbotrone-info-block h1 {
@@ -1413,7 +1414,7 @@ a:hover {
   color: #fff;
 }
 /* line 4, ../scss/components/_promo_block.scss */
-.promo-block .promo-cell1, .promo-block .promo-cell2, .promo-block .promo-cell3 {
+.promo-block .promo-cell {
   padding: 32px 40px 32px 40px;
 }
 /* line 8, ../scss/components/_promo_block.scss */
@@ -1464,12 +1465,32 @@ a:hover {
 
 /* line 37, ../scss/components/_promo_block.scss */
 .promo-block-minus-margin {
-  margin: -45px auto 70px auto;
+  margin: -45px auto 64px auto;
 }
 
-/* line 2, ../scss/components/_welcome_message.scss */
-.welcome-message {
+/* line 4, ../scss/components/_welcome_message.scss */
+.welcome-message .row {
   border-bottom: 1px solid #e8e8e8;
-  padding-bottom: 32px;
-  margin-bottom: 55px;
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+}
+/* line 10, ../scss/components/_welcome_message.scss */
+.welcome-message h3 {
+  width: 85%;
+  margin: 0 auto 0 auto;
+}
+
+/* line 3, ../scss/components/_services_block.scss */
+.services-block .services-cell {
+  padding: 32px 40px 32px 40px;
+}
+/* line 6, ../scss/components/_services_block.scss */
+.services-block .services-cell strong {
+  display: inline-block;
+  margin-bottom: 5px;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 26px;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  color: #474747;
 }

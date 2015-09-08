@@ -44,16 +44,15 @@ a:hover{
 .site-wrap {
 	width: 100%;
 	min-height: 100%;  
-	margin-bottom: -$Footer-height; 
+	margin-bottom: -$Footer-height; 	
 
 	&:after{
 		content: "";
 		display: block;
 		height: $Footer-height; 
 	}
+}
 
-	/*.container {
-		width: 100%;
-		max-width: 1060px;
-	}*/
+.container {
+	padding: 0 $small-layout-margin 0 $small-layout-margin;
 }

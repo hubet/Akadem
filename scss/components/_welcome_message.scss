@@ -1,6 +1,14 @@
 
 .welcome-message{
-	border-bottom: 1px solid $color-stone-grey;
-	padding-bottom: $main-layout-margin - 8px;
-	margin-bottom: $medium-layout-margin;
-}
+
+	.row{
+		border-bottom: 1px solid $color-stone-grey;
+		padding-bottom: $small-layout-margin;
+		margin-bottom: $small-layout-margin; 	
+	}
+
+	h3{
+		width: 85%;
+		margin: 0 auto 0 auto;
+	}
+}   

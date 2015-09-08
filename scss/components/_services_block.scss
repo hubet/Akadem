@@ -1,0 +1,13 @@
+.services-block{
+
+	.services-cell{
+		@include main-layout-padding();
+
+		strong{
+			display: inline-block;
+			margin-bottom: 5px;
+			@include xnormal-font-size(700); 
+			color: $color-dust-gray;
+		}		
+	}
+}

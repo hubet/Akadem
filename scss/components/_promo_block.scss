@@ -1,8 +1,8 @@
 .promo-block{	
 	color:#fff;
 
-	.promo-cell1, .promo-cell2, .promo-cell3{		
-		padding: $main-layout-margin - 8px $main-layout-margin $main-layout-margin - 8px $main-layout-margin;
+	.promo-cell{		
+		@include main-layout-padding();
 	}
 
 	.promo-cell1{ background: $color-carrot; }
@@ -35,5 +35,5 @@
 }
 
 .promo-block-minus-margin{ 
-	margin: -45px auto $long-layout-margin auto;  
+	margin: -45px auto $medium-layout-margin auto;  
 }

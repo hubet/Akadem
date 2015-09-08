@@ -17,3 +17,8 @@
     clear: both;
   }
 }
+
+
+@mixin main-layout-padding(){
+  padding: $main-layout-margin*0.8 $main-layout-margin $main-layout-margin*0.8 $main-layout-margin;
+}

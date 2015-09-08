@@ -4,6 +4,7 @@
 // Greyscalse
 $color-stone-grey:      #e8e8e8;
 $color-silver-grey:     #666666;
+$color-dust-gray:       #474747;
 $color-space-black:     #222222;
 
 
@@ -24,9 +25,10 @@ $anchor-hover-color:    #384b56;
 $Footer-height:         300px;
 $height-main-nav:       120px;  
 
+$small-layout-margin:	25px;  // *1.6
 $main-layout-margin:	40px;
-$medium-layout-margin:	55px;
-$long-layout-margin:	70px;
+$medium-layout-margin:	64px;  // *1.6
+$long-layout-margin:	102px; // *1.6
 
 
 // ---------------------------------------------------------------  

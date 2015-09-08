@@ -5,18 +5,19 @@
 @import  "mixins";
 @import  "typography";
 
-// Bootstap
-@import  "bootstrap/variables";  
-@import  "bootstrap/mixins/grid";
-@import  "bootstrap/mixins/grid-framework";
-@import  "bootstrap/grid";
- 
 // Layout
 @import  "layout/header";  
 @import  "layout/footer";
 @import  "layout/global_elements";
 
+// Bootstap
+@import  "bootstrap/variables";  
+@import  "bootstrap/mixins/grid";
+@import  "bootstrap/mixins/grid-framework";
+@import  "bootstrap/grid";
+
 // Components
 @import  "components/jumbotrone"; 
-@import  "components/promo_block";
+@import  "components/promo_block"; 
 @import  "components/welcome_message";
+@import  "components/services_block";
