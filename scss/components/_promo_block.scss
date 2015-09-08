@@ -1,8 +1,21 @@
 .promo-block{	
 	color:#fff;
+	display: table;
+
+	@include tablet-portrait-and-below{
+		display: block;
+	}
 
 	.promo-cell{		
 		@include main-layout-padding();
+		display: table-cell;
+		width: 33.33333%;
+		min-width: 33.33333%;
+
+		@include tablet-portrait-and-below{
+			display: block;
+			width: 100%;
+		}
 	}
 
 	.promo-cell1{ background: $color-carrot; }
@@ -25,7 +38,7 @@
 	.price{
 		display: block;		
 		margin-top: -5px;
-		@include xlarge-font-size(900); 
+		@include xlarge-font-size(900);		
 	}
 
 	p{		
