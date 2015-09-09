@@ -121,37 +121,37 @@ h3 {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 101, ../scss/_typography.scss */
+/* line 102, ../scss/_typography.scss */
 .icon-svg-video:before {
   content: "\e600";
 }
 
-/* line 104, ../scss/_typography.scss */
+/* line 105, ../scss/_typography.scss */
 .icon-svg-brain:before {
   content: "\e601";
 }
 
-/* line 107, ../scss/_typography.scss */
+/* line 108, ../scss/_typography.scss */
 .icon-svg-costume:before {
   content: "\e602";
 }
 
-/* line 110, ../scss/_typography.scss */
+/* line 111, ../scss/_typography.scss */
 .icon-svg-deal:before {
   content: "\e603";
 }
 
-/* line 113, ../scss/_typography.scss */
+/* line 114, ../scss/_typography.scss */
 .icon-svg-delivery:before {
   content: "\e604";
 }
 
-/* line 116, ../scss/_typography.scss */
+/* line 117, ../scss/_typography.scss */
 .icon-svg-people:before {
   content: "\e605";
 }
 
-/* line 119, ../scss/_typography.scss */
+/* line 120, ../scss/_typography.scss */
 .icon-svg-photo:before {
   content: "\e606";
 }
@@ -184,7 +184,7 @@ nav.main-nav {
 /* line 34, ../scss/layout/_header.scss */
 .main-menu {
   list-style: none;
-  padding: 50px 0px 0px 95px;
+  padding: 50px 0 0 95px;
   float: left;
 }
 /* line 39, ../scss/layout/_header.scss */
@@ -194,13 +194,12 @@ nav.main-nav {
 }
 /* line 43, ../scss/layout/_header.scss */
 .main-menu li:last-child {
-  margin-right: 0px;
+  margin-right: 0;
 }
 /* line 47, ../scss/layout/_header.scss */
 .main-menu li a {
   font-size: 15px;
   line-height: 21px;
-  font-weight: 400;
   color: #fff;
   text-decoration: none;
   -webkit-transition: color 0.2s ease;
@@ -209,27 +208,27 @@ nav.main-nav {
   -o-transition: color 0.2s ease;
   transition: color 0.2s ease;
 }
-/* line 55, ../scss/layout/_header.scss */
+/* line 54, ../scss/layout/_header.scss */
 .main-menu li a:hover {
   color: #666666;
 }
 
-/* line 66, ../scss/layout/_header.scss */
+/* line 65, ../scss/layout/_header.scss */
 .phone-numbers {
   list-style: none;
-  padding: 50px 0px 0px 0px;
+  padding: 50px 0 0;
   float: right;
 }
-/* line 71, ../scss/layout/_header.scss */
+/* line 70, ../scss/layout/_header.scss */
 .phone-numbers li {
   float: left;
   margin-left: 21px;
 }
-/* line 75, ../scss/layout/_header.scss */
+/* line 74, ../scss/layout/_header.scss */
 .phone-numbers li:first-child {
-  margin-left: 0px;
+  margin-left: 0;
 }
-/* line 79, ../scss/layout/_header.scss */
+/* line 78, ../scss/layout/_header.scss */
 .phone-numbers li a {
   font-size: 15px;
   line-height: 21px;
@@ -1434,43 +1433,47 @@ a:hover {
   }
 }
 /* line 3, ../scss/components/_jumbotrone.scss */
-.jumbotrone {
-  height: 490px;
+.jumbotron {
+  height: 690px;
   width: 100%;
   overflow: hidden;
   background: #a58994 url("../img/jumbo-bg.jpg") center no-repeat;
   background-size: cover;
 }
 /* line 10, ../scss/components/_jumbotrone.scss */
-.jumbotrone .jumbotrone-info-block {
+.jumbotron .jumbotron-info-block {
   margin: 64px 40px 0 40px;
 }
 /* line 13, ../scss/components/_jumbotrone.scss */
-.jumbotrone .jumbotrone-info-block h1 {
+.jumbotron .jumbotron-info-block h1 {
   color: #fff;
   font-size: 66px;
   line-height: 66px;
   font-weight: 900;
 }
 /* line 20, ../scss/components/_jumbotrone.scss */
-.jumbotrone .jumbotrone-info-block a {
+.jumbotron .jumbotron-info-block a {
   margin: 15px 0 0 0;
   display: inline-block;
   color: #fff;
   position: relative;
-  padding-left: 30px;
 }
 /* line 27, ../scss/components/_jumbotrone.scss */
-.jumbotrone .jumbotrone-info-block a:before {
-  text-decoration: none;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  font-size: 20px;
+.jumbotron .jumbotron-info-block a:after {
+  content: "...";
+}
+/* line 31, ../scss/components/_jumbotrone.scss */
+.jumbotron .jumbotron-info-block a .jumbotron-icon {
+  position: relative;
+  padding-left: 28px;
 }
 /* line 35, ../scss/components/_jumbotrone.scss */
-.jumbotrone .jumbotrone-info-block a:after {
-  content: "...";
+.jumbotron .jumbotron-info-block a .jumbotron-icon:before {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 20px;
 }
 
 /* line 1, ../scss/components/_promo_block.scss */

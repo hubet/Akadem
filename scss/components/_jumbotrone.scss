@@ -1,13 +1,13 @@
 
 
-.jumbotrone{
-	height: 490px;
+.jumbotron{
+	height: 690px;
 	width: 100%;
 	overflow: hidden; 
 	background: #a58994 url('../img/jumbo-bg.jpg') center no-repeat;
 	background-size: cover;
 
-	.jumbotrone-info-block{
+	.jumbotron-info-block{
 		margin: $medium-layout-margin $main-layout-margin 0 $main-layout-margin;		
 
 		h1{
@@ -22,19 +22,25 @@
 			display: inline-block;			
 			color:#fff;	
 			position: relative;
-			padding-left: 30px;
-
-			&:before{
-				text-decoration: none;
-				position: absolute;
-				top: 0px;
-				left: 0px;
-				font-size: 20px;
-			}				
+			
 
 			&:after{
 				content: "...";
 			}
+
+			.jumbotron-icon{
+				position: relative;
+				padding-left: 28px;
+
+				&:before{			
+					display: inline-block;
+					position: absolute;
+					top: 0;
+					left: 0;
+					font-size: 20px;
+				}
+			}
+			
 		}
 	}
 }

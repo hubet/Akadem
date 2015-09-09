@@ -33,7 +33,7 @@ nav.main-nav{
 
 .main-menu{ 
 	list-style: none;
-	padding: 50px 0px 0px 95px;	 
+	padding: 50px 0 0 95px;	 
 	float: left;
 
 	li{
@@ -41,13 +41,12 @@ nav.main-nav{
 		margin-right: $normal-font-size * 2.5;
 
 		&:last-child{
-			margin-right: 0px;
+			margin-right: 0;
 		}
 
 		a{
 			font-size: $normal-font-size;
-			line-height: $normal-line-height; 
-			font-weight: 400; 
+			line-height: $normal-line-height; 			
 			color: #fff;			
 			text-decoration: none;
 			@include transition(color .2s ease);
@@ -65,7 +64,7 @@ nav.main-nav{
 
 .phone-numbers{
 	list-style: none;
-	padding: 50px 0px 0px 0px;	 
+	padding: 50px 0 0;	 
 	float: right;
 
 	li{
@@ -73,7 +72,7 @@ nav.main-nav{
 		margin-left: $normal-line-height;
 
 		&:first-child{
-			margin-left: 0px;
+			margin-left: 0;
 		}
 
 		a{
