@@ -8,7 +8,7 @@
 	background-size: cover;
 
 	.jumbotrone-info-block{
-		margin: $medium-layout-margin $main-layout-margin 0 $main-layout-margin;
+		margin: $medium-layout-margin $main-layout-margin 0 $main-layout-margin;		
 
 		h1{
 			color:#fff;
@@ -20,7 +20,17 @@
 		a{
 			margin: 15px 0 0 0;
 			display: inline-block;			
-			color:#fff;					
+			color:#fff;	
+			position: relative;
+			padding-left: 30px;
+
+			&:before{
+				text-decoration: none;
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				font-size: 20px;
+			}				
 
 			&:after{
 				content: "...";

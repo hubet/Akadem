@@ -102,6 +102,62 @@ strong {
   white-space: nowrap;
 }
 
+@font-face {
+  font-family: 'Akademservis-font';
+  src: url("../fonts/Akademservis-font.eot?-xliaka");
+  src: url("../fonts/Akademservis-font.eot?#iefix-xliaka") format("embedded-opentype"), url("../fonts/Akademservis-font.ttf?-xliaka") format("truetype"), url("../fonts/Akademservis-font.woff?-xliaka") format("woff"), url("../fonts/Akademservis-font.svg?-xliaka#Akademservis-font") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 85, ../scss/_typography.scss */
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'Akademservis-font';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 99, ../scss/_typography.scss */
+.icon-svg-video:before {
+  content: "\e600";
+}
+
+/* line 102, ../scss/_typography.scss */
+.icon-svg-brain:before {
+  content: "\e601";
+}
+
+/* line 105, ../scss/_typography.scss */
+.icon-svg-costume:before {
+  content: "\e602";
+}
+
+/* line 108, ../scss/_typography.scss */
+.icon-svg-deal:before {
+  content: "\e603";
+}
+
+/* line 111, ../scss/_typography.scss */
+.icon-svg-delivery:before {
+  content: "\e604";
+}
+
+/* line 114, ../scss/_typography.scss */
+.icon-svg-people:before {
+  content: "\e605";
+}
+
+/* line 117, ../scss/_typography.scss */
+.icon-svg-photo:before {
+  content: "\e606";
+}
+
 /* line 4, ../scss/layout/_header.scss */
 nav.main-nav {
   background-color: #222222;
@@ -1403,8 +1459,18 @@ a:hover {
   margin: 15px 0 0 0;
   display: inline-block;
   color: #fff;
+  position: relative;
+  padding-left: 30px;
 }
-/* line 25, ../scss/components/_jumbotrone.scss */
+/* line 27, ../scss/components/_jumbotrone.scss */
+.jumbotrone .jumbotrone-info-block a:before {
+  text-decoration: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-size: 20px;
+}
+/* line 35, ../scss/components/_jumbotrone.scss */
 .jumbotrone .jumbotrone-info-block a:after {
   content: "...";
 }
@@ -1497,17 +1563,30 @@ a:hover {
   margin: 0 auto 0 auto;
 }
 
-/* line 3, ../scss/components/_services_block.scss */
+/* line 6, ../scss/components/_services_block.scss */
 .services-block .services-cell {
   padding: 32px 40px 32px 40px;
 }
-/* line 6, ../scss/components/_services_block.scss */
+/* line 9, ../scss/components/_services_block.scss */
+.services-block .services-cell .services-icon {
+  position: relative;
+  color: #474747;
+}
+/* line 13, ../scss/components/_services_block.scss */
+.services-block .services-cell .services-icon:before {
+  text-decoration: none;
+  position: absolute;
+  top: -9px;
+  left: -40px;
+  font-size: 32px;
+}
+/* line 22, ../scss/components/_services_block.scss */
 .services-block .services-cell strong {
   display: inline-block;
+  position: relative;
   margin-bottom: 5px;
   font-weight: 700;
   font-size: 19px;
   line-height: 26px;
   font-family: "Roboto", Helvetica, Arial, sans-serif;
-  color: #474747;
 }
