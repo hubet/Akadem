@@ -1,0 +1,47 @@
+// General button class
+.button, a.button, a.button:active, a.button:visited{
+  display: inline-block;
+  line-height: 50px;
+  -webkit-appearance: none;
+  border: 0;
+  cursor: pointer;  
+  vertical-align: top;  
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  @include transition(color .2s ease);  
+  min-width: 190px;
+  padding: 0 $small-layout-margin;
+  word-spacing: normal;
+  margin: 0 0 $small-layout-margin 0;
+}
+
+.button-mobile{
+  @include tablet-portrait-and-below{
+    width: 100%;
+  }
+}
+  
+
+
+// Action button
+.button-action, a.button-action, a.button-action:active, a.button-action:visited{
+  color: $color-dust-gray;
+  background: #ffde85;
+  background: -moz-linear-gradient(top,  #ffde85 0%, #ebc970 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffde85), color-stop(100%,#ebc970));
+  background: -webkit-linear-gradient(top,  #ffde85 0%,#ebc970 100%);
+  background: -o-linear-gradient(top,  #ffde85 0%,#ebc970 100%);
+  background: -ms-linear-gradient(top,  #ffde85 0%,#ebc970 100%);
+  background: linear-gradient(to bottom,  #ffde85 0%,#ebc970 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffde85', endColorstr='#ebc970',GradientType=0 );
+}
+
+.button-action:hover, a.button-action:hover{ background: #ffde85; }
+
+
+// Buttons set
+.buttons-set{
+  word-spacing: 18px;  
+}

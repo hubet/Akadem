@@ -12,13 +12,15 @@
 
 		h1{
 			color:#fff;
-			font-size: 66px;
-			line-height: 66px; 
 			font-weight: 900;			
+			@include xxlarge-font-size();
+			@include mobile-landscape-and-below{
+			    @include xlarge-font-size();
+			}  				
 		}
 		
 		a{
-			margin: 15px 0 0 0;
+			margin: 20px 0 0 0;
 			display: inline-block;			
 			color:#fff;	
 			position: relative;

@@ -1,8 +1,7 @@
 .promo-block{	
-	color:#fff;
+	color: #fff;
 	display: table;
 	@include light-font-weight();
-
 	@include tablet-portrait-and-below{
 		display: block;
 	}
@@ -41,6 +40,9 @@
 		margin-top: -5px;
 		@include xlarge-font-size();		
 		@include xbold-font-weight();
+		@include tablet-landscape-and-below{
+		    @include large-font-size();
+		}  				
 	}
 
 	p{		

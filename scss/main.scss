@@ -16,8 +16,12 @@
 @import  "bootstrap/mixins/grid-framework";
 @import  "bootstrap/grid";
 
-// Components
-@import  "components/jumbotrone"; 
-@import  "components/promo_block"; 
-@import  "components/welcome_message";
-@import  "components/services_block";
+// Atoms
+@import  "atoms/buttons"; 
+
+// Molecules
+@import  "molecules/jumbotrone"; 
+@import  "molecules/promo_block"; 
+@import  "molecules/welcome_message";
+@import  "molecules/services_block";
+@import  "molecules/important_block";

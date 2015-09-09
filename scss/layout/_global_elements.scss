@@ -17,7 +17,8 @@ body{
 	height: 100%;
 	min-width: 320px;
 	color: $color-silver-grey;
-	font: #{$normal-font-size}/#{$normal-line-height} $base-font-family;
+	font-family: $base-font-family;
+	@include normal-font-size();	
 }
 	
 a, a:visited, a:active{

@@ -10,9 +10,9 @@ $color-space-black:     #222222;
 
 // ---------------------------------------------------------------
 // Colours 
-$color-rose:             #d52e4a;
-$color-carrot:           #ec5955;
-$color-vine:             #bf3e4c;
+$color-rose:            #d52e4a;
+$color-carrot:          #ec5955;
+$color-vine:            #bf3e4c;
 
 // ---------------------------------------------------------------
 // Additional
@@ -37,8 +37,9 @@ $normal-font-size:      15px;  $normal-line-height:    21px;
 $xnormal-font-size:     19px;  $xnormal-line-height:   26px;
 $big-font-size:         23px;  $big-line-height:       33px;
 $xbig-font-size:        29px;  $xbig-line-height:      41px;
-$large-font-size:       37px;  $large-line-height:     51px;
-$xlarge-font-size:      46px;  $xlarge-line-height:    63px; 
+$large-font-size:       37px;  $large-line-height:     45px;
+$xlarge-font-size:      46px;  $xlarge-line-height:    50px; 
+$xxlarge-font-size:     66px;  $xxlarge-line-height:   66px; // ???
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,700,900&subset=latin,cyrillic-ext,cyrillic);
 $base-font-family:      'Roboto', Helvetica, Arial, sans-serif;
