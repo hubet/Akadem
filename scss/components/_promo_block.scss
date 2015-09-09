@@ -1,6 +1,7 @@
 .promo-block{	
 	color:#fff;
 	display: table;
+	@include light-font-weight();
 
 	@include tablet-portrait-and-below{
 		display: block;
@@ -26,7 +27,7 @@
 		color:#fff;		
 		text-decoration: none;		
 		border-bottom: 1px solid #fff;
-		@include big-font-size(300); 
+		@include big-font-size(); 		
 
 		&:hover{
 			color: #fff;
@@ -38,12 +39,13 @@
 	.price{
 		display: block;		
 		margin-top: -5px;
-		@include xlarge-font-size(900);		
+		@include xlarge-font-size();		
+		@include xbold-font-weight();
 	}
 
 	p{		
 		margin-top: 15px;
-		@include normal-font-size(300); 
+		@include normal-font-size(); 
 	}
 }
 

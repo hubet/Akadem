@@ -1,58 +1,60 @@
 
-@mixin normal-font-size($weight: $base-font-weight) {
-  font-weight: $weight;
+
+// ***********************************************************************
+// Font sizes
+
+@mixin normal-font-size() {
   font-size:   $normal-font-size;
   line-height: $normal-line-height;
-  font-family: $base-font-family;
 }
 
-@mixin xnormal-font-size($weight: $base-font-weight) {
-  font-weight: $weight;
+@mixin xnormal-font-size() {
   font-size:   $xnormal-font-size;
   line-height: $xnormal-line-height;
-  font-family: $base-font-family;
 }
 
-@mixin big-font-size($weight: $base-font-weight) {
-  font-weight: $weight;
+@mixin big-font-size() {
   font-size:   $big-font-size;
-  line-height: $big-line-height;
-  font-family: $base-font-family;
+  line-height: $big-line-height;  
 }
 
-@mixin xbig-font-size($weight: $base-font-weight) {
-  font-weight: $weight;
+@mixin xbig-font-size() {
   font-size:   $xbig-font-size;
   line-height: $xbig-line-height;
-  font-family: $base-font-family;
 }
 
-@mixin large-font-size($weight: $base-font-weight) {
-  font-weight: $weight;
+@mixin large-font-size() {
   font-size:   $large-font-size;
   line-height: $large-line-height;
-  font-family: $base-font-family;
 }
 
-@mixin xlarge-font-size($weight: $base-font-weight) {
-  font-weight: $weight;
+@mixin xlarge-font-size() {
   font-size:   $xlarge-font-size;
   line-height: $xlarge-line-height;
-  font-family: $base-font-family;
 }
 
 
 
 
+// ***********************************************************************
+// Font sizes
+
+@mixin xbold-font-weight() { font-weight: 900; }
+@mixin bold-font-weight() { font-weight: bold; }
+@mixin normal-font-weight() { font-weight: normal; }
+@mixin light-font-weight() { font-weight: 300; }
 
 
-h3 {
-  @include xbig-font-size(300);
-}
 
-strong{
-  font-weight: bolder;
-}
+
+
+
+
+
+
+
+
+h3 { @include xbig-font-size() }
 
 
 // Alignment

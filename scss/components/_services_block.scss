@@ -2,28 +2,22 @@
 
 
 .services-block{
-
+	
 	.services-cell{
 		@include main-layout-padding();
 
-		.services-icon{
+		.sevices-heading{
 			position: relative;
-			color: $color-dust-gray;			
-
-			&:before{
-				text-decoration: none;
-				position: absolute;
-				top: -9px;
-				left: -40px;
-				font-size: 32px;				
-			}
+			color: $color-dust-gray;
+			margin: 0 0 5px;						
+			@include xnormal-font-size(); 					
 		}
 
-		strong{
-			display: inline-block;
-			position: relative;
-			margin-bottom: 5px;						
-			@include xnormal-font-size(700); 					
-		}		
+		.services-icon{			
+			position: absolute;
+			top: -3px;
+			left: -40px;
+			font-size: 32px;
+		}	
 	}
 }

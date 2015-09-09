@@ -64,40 +64,38 @@ img {
   border: 0;
 }
 
-/* line 49, ../scss/_typography.scss */
+/* line 58, ../scss/_reset.scss */
+strong {
+  font-weight: bold;
+}
+
+/* line 57, ../scss/_typography.scss */
 h3 {
-  font-weight: 300;
   font-size: 29px;
   line-height: 41px;
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
 }
 
-/* line 53, ../scss/_typography.scss */
-strong {
-  font-weight: bolder;
-}
-
-/* line 59, ../scss/_typography.scss */
+/* line 61, ../scss/_typography.scss */
 .text-left {
   text-align: left;
 }
 
-/* line 60, ../scss/_typography.scss */
+/* line 62, ../scss/_typography.scss */
 .text-right {
   text-align: right;
 }
 
-/* line 61, ../scss/_typography.scss */
+/* line 63, ../scss/_typography.scss */
 .text-center {
   text-align: center;
 }
 
-/* line 62, ../scss/_typography.scss */
+/* line 64, ../scss/_typography.scss */
 .text-justify {
   text-align: justify;
 }
 
-/* line 63, ../scss/_typography.scss */
+/* line 65, ../scss/_typography.scss */
 .text-nowrap {
   white-space: nowrap;
 }
@@ -109,7 +107,7 @@ strong {
   font-weight: normal;
   font-style: normal;
 }
-/* line 85, ../scss/_typography.scss */
+/* line 87, ../scss/_typography.scss */
 [class^="icon-"], [class*=" icon-"] {
   font-family: 'Akademservis-font';
   speak: none;
@@ -123,37 +121,37 @@ strong {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 99, ../scss/_typography.scss */
+/* line 101, ../scss/_typography.scss */
 .icon-svg-video:before {
   content: "\e600";
 }
 
-/* line 102, ../scss/_typography.scss */
+/* line 104, ../scss/_typography.scss */
 .icon-svg-brain:before {
   content: "\e601";
 }
 
-/* line 105, ../scss/_typography.scss */
+/* line 107, ../scss/_typography.scss */
 .icon-svg-costume:before {
   content: "\e602";
 }
 
-/* line 108, ../scss/_typography.scss */
+/* line 110, ../scss/_typography.scss */
 .icon-svg-deal:before {
   content: "\e603";
 }
 
-/* line 111, ../scss/_typography.scss */
+/* line 113, ../scss/_typography.scss */
 .icon-svg-delivery:before {
   content: "\e604";
 }
 
-/* line 114, ../scss/_typography.scss */
+/* line 116, ../scss/_typography.scss */
 .icon-svg-people:before {
   content: "\e605";
 }
 
-/* line 117, ../scss/_typography.scss */
+/* line 119, ../scss/_typography.scss */
 .icon-svg-photo:before {
   content: "\e606";
 }
@@ -1479,6 +1477,7 @@ a:hover {
 .promo-block {
   color: #fff;
   display: table;
+  font-weight: 300;
 }
 @media only screen and (max-width: 768px) {
   /* line 1, ../scss/components/_promo_block.scss */
@@ -1486,7 +1485,7 @@ a:hover {
     display: block;
   }
 }
-/* line 9, ../scss/components/_promo_block.scss */
+/* line 10, ../scss/components/_promo_block.scss */
 .promo-block .promo-cell {
   padding: 32px 40px 32px 40px;
   display: table-cell;
@@ -1494,59 +1493,54 @@ a:hover {
   min-width: 33.33333%;
 }
 @media only screen and (max-width: 768px) {
-  /* line 9, ../scss/components/_promo_block.scss */
+  /* line 10, ../scss/components/_promo_block.scss */
   .promo-block .promo-cell {
     display: block;
     width: 100%;
   }
 }
-/* line 21, ../scss/components/_promo_block.scss */
+/* line 22, ../scss/components/_promo_block.scss */
 .promo-block .promo-cell1 {
   background: #ec5955;
 }
-/* line 22, ../scss/components/_promo_block.scss */
+/* line 23, ../scss/components/_promo_block.scss */
 .promo-block .promo-cell2 {
   background: #d52e4a;
 }
-/* line 23, ../scss/components/_promo_block.scss */
+/* line 24, ../scss/components/_promo_block.scss */
 .promo-block .promo-cell3 {
   background: #bf3e4c;
 }
-/* line 25, ../scss/components/_promo_block.scss */
+/* line 26, ../scss/components/_promo_block.scss */
 .promo-block a.link-to-page {
   color: #fff;
   text-decoration: none;
   border-bottom: 1px solid #fff;
-  font-weight: 300;
   font-size: 23px;
   line-height: 33px;
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
 }
-/* line 31, ../scss/components/_promo_block.scss */
+/* line 32, ../scss/components/_promo_block.scss */
 .promo-block a.link-to-page:hover {
   color: #fff;
   text-decoration: none;
   border-bottom: 0px;
 }
-/* line 38, ../scss/components/_promo_block.scss */
+/* line 39, ../scss/components/_promo_block.scss */
 .promo-block .price {
   display: block;
   margin-top: -5px;
-  font-weight: 900;
   font-size: 46px;
   line-height: 63px;
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-weight: 900;
 }
-/* line 44, ../scss/components/_promo_block.scss */
+/* line 46, ../scss/components/_promo_block.scss */
 .promo-block p {
   margin-top: 15px;
-  font-weight: 300;
   font-size: 15px;
   line-height: 21px;
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
 }
 
-/* line 50, ../scss/components/_promo_block.scss */
+/* line 52, ../scss/components/_promo_block.scss */
 .promo-block-minus-margin {
   margin: -45px auto 64px auto;
 }
@@ -1561,6 +1555,7 @@ a:hover {
 .welcome-message h3 {
   width: 85%;
   margin: 0 auto 0 auto;
+  font-weight: 300;
 }
 
 /* line 6, ../scss/components/_services_block.scss */
@@ -1568,25 +1563,17 @@ a:hover {
   padding: 32px 40px 32px 40px;
 }
 /* line 9, ../scss/components/_services_block.scss */
-.services-block .services-cell .services-icon {
+.services-block .services-cell .sevices-heading {
   position: relative;
   color: #474747;
-}
-/* line 13, ../scss/components/_services_block.scss */
-.services-block .services-cell .services-icon:before {
-  text-decoration: none;
-  position: absolute;
-  top: -9px;
-  left: -40px;
-  font-size: 32px;
-}
-/* line 22, ../scss/components/_services_block.scss */
-.services-block .services-cell strong {
-  display: inline-block;
-  position: relative;
-  margin-bottom: 5px;
-  font-weight: 700;
+  margin: 0 0 5px;
   font-size: 19px;
   line-height: 26px;
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
+}
+/* line 16, ../scss/components/_services_block.scss */
+.services-block .services-cell .services-icon {
+  position: absolute;
+  top: -3px;
+  left: -40px;
+  font-size: 32px;
 }

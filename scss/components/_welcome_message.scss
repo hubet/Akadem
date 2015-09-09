@@ -10,5 +10,6 @@
 	h3{
 		width: 85%;
 		margin: 0 auto 0 auto;
+		@include light-font-weight();
 	}
 }   
