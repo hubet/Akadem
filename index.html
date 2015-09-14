@@ -31,27 +31,36 @@
 
 
 		<!-- Top Navigation --> 
-		<nav class="main-nav">	
+		<header class="main-nav">	
 			<div class='container'>	
-				<div class="row">			
+				<div class="row">	
+						
 					<strong class="main-logo">
 						<a href='#'>Академсервис</a>		
 					</strong>
 					
-					<ul class="main-menu">
-						<li><a href="">Услуги</a></li>
-						<li><a href="">Галерея</a></li>
-						<li><a href="">Контакты</a></li>
-					</ul>	
+					<nav class="menu-holder">
+						<ul class="main-menu">
+							<li><a href="">Услуги</a></li>
+							<li><a href="">Галерея</a></li>
+							<li><a href="">Контакты</a></li>
+						</ul>	
 
-					<ul class="phone-numbers">
-						<li><a href="tel: +380932532853">(093) 253-28-53</a></li>
-						<li><a href="tel: +380988967093">(098) 896-70-93</a></li>
-						<li><a href="tel: +380994916684">(099) 491-66-84</a></li>
-					</ul>				
+						<ul class="phone-numbers">
+							<li><a href="tel: +380932532853">(093) 253-28-53</a></li>
+							<li><a href="tel: +380988967093">(098) 896-70-93</a></li>
+							<li><a href="tel: +380994916684">(099) 491-66-84</a></li>
+						</ul>
+					</nav>
+
+					<!-- Icon for Hamburger menu --> 
+					<div id="menuIcon">
+						<a href="#menuExpand">Меню</a> 
+					</div>
+
 				</div>
-			</div>	
-		</nav>
+			</div>
+		</header>
 		<!-- End Top Navigation --> 
 
 
@@ -190,6 +199,17 @@
 	<!-- End Footer -->
 
 
+
+	<script type="text/javascript">
+
+
+	$(function() {
+	    $("a[href=#menuExpand]").click(function(e) {
+	        $("header").toggleClass("menuOpen");
+	        e.preventDefault();
+	    });
+	});
+	</script>
 
 </body>
 </html> 

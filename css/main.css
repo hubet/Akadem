@@ -157,7 +157,7 @@ h3 {
 }
 
 /* line 4, ../scss/layout/_header.scss */
-nav.main-nav {
+.main-nav {
   background-color: #222222;
   height: 120px;
   position: relative;
@@ -181,22 +181,29 @@ nav.main-nav {
   background-size: 100% 100%;
 }
 
-/* line 34, ../scss/layout/_header.scss */
+@media only screen and (max-width: 768px) {
+  /* line 34, ../scss/layout/_header.scss */
+  .menu-holder {
+    display: none;
+  }
+}
+
+/* line 40, ../scss/layout/_header.scss */
 .main-menu {
   list-style: none;
   padding: 50px 0 0 95px;
   float: left;
 }
-/* line 39, ../scss/layout/_header.scss */
+/* line 45, ../scss/layout/_header.scss */
 .main-menu li {
   float: left;
   margin-right: 37.5px;
 }
-/* line 43, ../scss/layout/_header.scss */
+/* line 49, ../scss/layout/_header.scss */
 .main-menu li:last-child {
   margin-right: 0;
 }
-/* line 47, ../scss/layout/_header.scss */
+/* line 53, ../scss/layout/_header.scss */
 .main-menu li a {
   font-size: 15px;
   line-height: 21px;
@@ -208,27 +215,41 @@ nav.main-nav {
   -o-transition: color 0.2s ease;
   transition: color 0.2s ease;
 }
-/* line 54, ../scss/layout/_header.scss */
+/* line 60, ../scss/layout/_header.scss */
 .main-menu li a:hover {
   color: #666666;
 }
 
-/* line 65, ../scss/layout/_header.scss */
+/* line 71, ../scss/layout/_header.scss */
 .phone-numbers {
   list-style: none;
   padding: 50px 0 0;
   float: right;
 }
-/* line 70, ../scss/layout/_header.scss */
+@media only screen and (max-width: 1024px) {
+  /* line 71, ../scss/layout/_header.scss */
+  .phone-numbers {
+    padding: 25px 0 0;
+  }
+}
+/* line 80, ../scss/layout/_header.scss */
 .phone-numbers li {
   float: left;
   margin-left: 21px;
 }
-/* line 74, ../scss/layout/_header.scss */
+@media only screen and (max-width: 1024px) {
+  /* line 80, ../scss/layout/_header.scss */
+  .phone-numbers li {
+    float: none;
+    display: block;
+    margin-left: 0px;
+  }
+}
+/* line 90, ../scss/layout/_header.scss */
 .phone-numbers li:first-child {
   margin-left: 0;
 }
-/* line 78, ../scss/layout/_header.scss */
+/* line 94, ../scss/layout/_header.scss */
 .phone-numbers li a {
   font-size: 15px;
   line-height: 21px;
@@ -236,6 +257,32 @@ nav.main-nav {
   color: #666666;
   text-decoration: none;
   cursor: default;
+}
+
+/* line 111, ../scss/layout/_header.scss */
+#menuIcon {
+  position: absolute;
+  top: 50%;
+  margin-top: -17px;
+  right: 25px;
+  display: none;
+  width: 34px;
+  height: 34px;
+  text-indent: -9999px;
+  background-color: red;
+}
+@media only screen and (max-width: 768px) {
+  /* line 111, ../scss/layout/_header.scss */
+  #menuIcon {
+    display: inline-block;
+  }
+}
+/* line 126, ../scss/layout/_header.scss */
+#menuIcon a {
+  width: 34px;
+  height: 34px;
+  display: block;
+  background: url("../images/hamburger.png") no-repeat center;
 }
 
 /* line 4, ../scss/layout/_footer.scss */

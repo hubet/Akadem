@@ -1,7 +1,7 @@
 // ---------------------------------------------------------------
 // Header
 
-nav.main-nav{
+.main-nav{
   background-color: $color-space-black;
   height: $height-main-nav; 	  
   position: relative;
@@ -31,6 +31,12 @@ nav.main-nav{
 // ---------------------------------------------------------------
 // main navigation 
 
+.menu-holder{
+	@include tablet-portrait-and-below{
+		display: none;
+	}
+}
+
 .main-menu{ 
 	list-style: none;
 	padding: 50px 0 0 95px;	 
@@ -54,7 +60,7 @@ nav.main-nav{
 			&:hover{
 				color: $color-silver-grey;
 			}
-		}
+		}  
 	}
 }
 
@@ -67,9 +73,19 @@ nav.main-nav{
 	padding: 50px 0 0;	 
 	float: right;
 
+	@include tablet-landscape-and-below{
+		padding: 25px 0 0;
+	}
+
 	li{
 		float: left;		
 		margin-left: $normal-line-height;
+
+		@include tablet-landscape-and-below{
+			float: none;
+			display: block;
+			margin-left: 0px;
+		}
 
 		&:first-child{
 			margin-left: 0;
@@ -84,4 +100,33 @@ nav.main-nav{
 			cursor: default;
 		}
 	}
+}
+
+
+
+
+
+//
+
+#menuIcon { 
+    position: absolute;
+    top: 50%;
+    margin-top: -17px;
+    right: $small-layout-margin;
+    display: none;
+    width: 34px;
+    height: 34px;
+    text-indent: -9999px;
+    background-color: red;
+
+    @include tablet-portrait-and-below{
+      display: inline-block;
+    }
+
+    a {
+      width: 34px;
+      height: 34px;
+      display: block;
+      background: url('../images/hamburger.png') no-repeat center;  
+    }
 }
