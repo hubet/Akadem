@@ -8,15 +8,14 @@
 	background-size: cover;
 
 	.jumbotron-info-block{
-		margin: $medium-layout-margin $main-layout-margin 0 $main-layout-margin;		
+		margin: $medium-layout-margin $main-layout-margin 0 $main-layout-margin;
+		@include transition(all, 0.5s, ease-in-out);			
 
 		h1{
 			color:#fff;
 			font-weight: 900;			
-			@include xxlarge-font-size();
-			@include mobile-landscape-and-below{
-			    @include xlarge-font-size();
-			}  				
+			@include transition(all, 0.5s, ease-in-out);	
+			@include xxlarge-font-size();			
 		}
 		
 		a{
@@ -45,4 +44,38 @@
 			
 		}
 	}
+
+
+
+
+	// tablet-portrait-and-below
+	@include tablet-portrait-and-below{
+		height: 490px;
+
+		.jumbotron-info-block{
+			h1{
+				@include xlarge-font-size();		
+			}
+		}
+	}
+
+
+
+
+	// mobile-landscape-and-below
+	@include mobile-landscape-and-below{
+		height: 390px;
+		.jumbotron-info-block{
+			margin: $small-layout-margin 0 0;
+			
+			h1{
+				@include large-font-size();						
+			}
+		}
+	}
+
+
+
 }
+
+

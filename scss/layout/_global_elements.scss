@@ -50,7 +50,7 @@ a:hover{
 	&:after{
 		content: "";
 		display: block;
-		height: $Footer-height; 
+		height: $Footer-height + 70px; // Footer top margin
 	}
 }
 
@@ -58,3 +58,5 @@ a:hover{
 body .container {
 	padding: 0 $small-layout-margin 0 $small-layout-margin;
 }
+
+

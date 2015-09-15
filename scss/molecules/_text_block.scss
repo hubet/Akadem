@@ -1,0 +1,8 @@
+
+
+
+.text-block{
+	.add-padding-inside{
+		@include main-layout-padding(); 
+	}
+}

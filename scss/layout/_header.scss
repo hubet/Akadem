@@ -2,7 +2,7 @@
 // Header
 
 .main-nav{
-@include transition(all, 0.5s, ease-in-out);	
+@include transition(all 0.5s, ease-in-out);	
   background-color: $color-space-black;
   height: $height-main-nav; 	  
   position: relative;
@@ -38,10 +38,9 @@
 
 // menu holder 
 .menu-holder{	
-	background: transparent;
-	@include transition(height, 0.5s, ease-in-out);	
-	
+	background: transparent;		
 	@include tablet-portrait-and-below{
+		@include transition(height, 0.5s, ease-in-out);	
 		overflow: hidden;		
 		max-height: 0;
 		position: absolute;
@@ -173,6 +172,13 @@
 		display: block;		
 		color:#fff;
 		text-decoration: none;		
+		text-transform: uppercase;
+		font-size: 11px;
+		@include transition(color .2s ease);
+
+		&:hover{
+			color: $color-silver-grey;
+		}		
     }
 
     @include tablet-portrait-and-below{

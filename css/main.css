@@ -158,11 +158,11 @@ h3 {
 
 /* line 4, ../scss/layout/_header.scss */
 .main-nav {
-  -webkit-transition: all, 0.5s, ease-in-out;
-  -moz-transition: all, 0.5s, ease-in-out;
-  -ms-transition: all, 0.5s, ease-in-out;
-  -o-transition: all, 0.5s, ease-in-out;
-  transition: all, 0.5s, ease-in-out;
+  -webkit-transition: all 0.5s, ease-in-out;
+  -moz-transition: all 0.5s, ease-in-out;
+  -ms-transition: all 0.5s, ease-in-out;
+  -o-transition: all 0.5s, ease-in-out;
+  transition: all 0.5s, ease-in-out;
   background-color: #222222;
   height: 120px;
   position: relative;
@@ -196,15 +196,15 @@ h3 {
 /* line 40, ../scss/layout/_header.scss */
 .menu-holder {
   background: transparent;
-  -webkit-transition: height, 0.5s, ease-in-out;
-  -moz-transition: height, 0.5s, ease-in-out;
-  -ms-transition: height, 0.5s, ease-in-out;
-  -o-transition: height, 0.5s, ease-in-out;
-  transition: height, 0.5s, ease-in-out;
 }
 @media only screen and (max-width: 768px) {
   /* line 40, ../scss/layout/_header.scss */
   .menu-holder {
+    -webkit-transition: height, 0.5s, ease-in-out;
+    -moz-transition: height, 0.5s, ease-in-out;
+    -ms-transition: height, 0.5s, ease-in-out;
+    -o-transition: height, 0.5s, ease-in-out;
+    transition: height, 0.5s, ease-in-out;
     overflow: hidden;
     max-height: 0;
     position: absolute;
@@ -216,29 +216,29 @@ h3 {
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 55, ../scss/layout/_header.scss */
+  /* line 54, ../scss/layout/_header.scss */
   .menuOpen .menu-holder {
     max-height: 400%;
     padding: 25px;
   }
 }
 
-/* line 65, ../scss/layout/_header.scss */
+/* line 64, ../scss/layout/_header.scss */
 .main-menu {
   list-style: none;
   padding: 50px 0 0 95px;
   float: left;
 }
-/* line 70, ../scss/layout/_header.scss */
+/* line 69, ../scss/layout/_header.scss */
 .main-menu li {
   float: left;
   margin-right: 37.5px;
 }
-/* line 74, ../scss/layout/_header.scss */
+/* line 73, ../scss/layout/_header.scss */
 .main-menu li:last-child {
   margin-right: 0;
 }
-/* line 76, ../scss/layout/_header.scss */
+/* line 75, ../scss/layout/_header.scss */
 .main-menu li a {
   font-size: 15px;
   line-height: 21px;
@@ -250,26 +250,26 @@ h3 {
   -o-transition: color 0.2s ease;
   transition: color 0.2s ease;
 }
-/* line 83, ../scss/layout/_header.scss */
+/* line 82, ../scss/layout/_header.scss */
 .main-menu li a:hover {
   color: #666666;
 }
 @media only screen and (max-width: 768px) {
-  /* line 65, ../scss/layout/_header.scss */
+  /* line 64, ../scss/layout/_header.scss */
   .main-menu {
     padding: 0;
     float: none;
     width: 100;
     text-align: center;
   }
-  /* line 95, ../scss/layout/_header.scss */
+  /* line 94, ../scss/layout/_header.scss */
   .main-menu li {
     float: none;
     display: block;
     margin: 0;
     border-bottom: 1px solid #222222;
   }
-  /* line 101, ../scss/layout/_header.scss */
+  /* line 100, ../scss/layout/_header.scss */
   .main-menu li a {
     display: block;
     width: 100%;
@@ -277,22 +277,22 @@ h3 {
   }
 }
 
-/* line 114, ../scss/layout/_header.scss */
+/* line 113, ../scss/layout/_header.scss */
 .phone-numbers {
   list-style: none;
   padding: 50px 0 0;
   float: right;
 }
-/* line 119, ../scss/layout/_header.scss */
+/* line 118, ../scss/layout/_header.scss */
 .phone-numbers li {
   float: left;
   margin-left: 21px;
 }
-/* line 123, ../scss/layout/_header.scss */
+/* line 122, ../scss/layout/_header.scss */
 .phone-numbers li:first-child {
   margin-left: 0;
 }
-/* line 127, ../scss/layout/_header.scss */
+/* line 126, ../scss/layout/_header.scss */
 .phone-numbers li a {
   font-size: 15px;
   line-height: 21px;
@@ -302,11 +302,11 @@ h3 {
   cursor: default;
 }
 @media only screen and (max-width: 1024px) {
-  /* line 114, ../scss/layout/_header.scss */
+  /* line 113, ../scss/layout/_header.scss */
   .phone-numbers {
     padding: 25px 0 0;
   }
-  /* line 140, ../scss/layout/_header.scss */
+  /* line 139, ../scss/layout/_header.scss */
   .phone-numbers li {
     float: none;
     display: block;
@@ -314,7 +314,7 @@ h3 {
   }
 }
 @media only screen and (max-width: 768px) {
-  /* line 114, ../scss/layout/_header.scss */
+  /* line 113, ../scss/layout/_header.scss */
   .phone-numbers {
     padding: 0;
     width: 100%;
@@ -323,7 +323,7 @@ h3 {
   }
 }
 
-/* line 161, ../scss/layout/_header.scss */
+/* line 160, ../scss/layout/_header.scss */
 #menuIcon {
   position: absolute;
   top: 50%;
@@ -332,7 +332,7 @@ h3 {
   display: none;
   background-color: #111111;
 }
-/* line 169, ../scss/layout/_header.scss */
+/* line 168, ../scss/layout/_header.scss */
 #menuIcon a {
   position: relative;
   line-height: 34px;
@@ -340,9 +340,20 @@ h3 {
   display: block;
   color: #fff;
   text-decoration: none;
+  text-transform: uppercase;
+  font-size: 11px;
+  -webkit-transition: color 0.2s ease;
+  -moz-transition: color 0.2s ease;
+  -ms-transition: color 0.2s ease;
+  -o-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+}
+/* line 179, ../scss/layout/_header.scss */
+#menuIcon a:hover {
+  color: #666666;
 }
 @media only screen and (max-width: 768px) {
-  /* line 161, ../scss/layout/_header.scss */
+  /* line 160, ../scss/layout/_header.scss */
   #menuIcon {
     display: inline-block;
   }
@@ -352,10 +363,6 @@ h3 {
 .site-footer {
   background-color: #222222;
   height: 300px;
-  /*.container {
-  	width: 100%;
-  	max-width: 1060px;
-  }*/
 }
 
 /* line 1, ../scss/layout/_global_elements.scss */
@@ -418,7 +425,7 @@ a:hover {
 .site-wrap:after {
   content: "";
   display: block;
-  height: 300px;
+  height: 370px;
 }
 
 /* line 58, ../scss/layout/_global_elements.scss */
@@ -1608,44 +1615,73 @@ body .container {
 /* line 10, ../scss/molecules/_jumbotrone.scss */
 .jumbotron .jumbotron-info-block {
   margin: 64px 40px 0 40px;
+  -webkit-transition: all, 0.5s, ease-in-out;
+  -moz-transition: all, 0.5s, ease-in-out;
+  -ms-transition: all, 0.5s, ease-in-out;
+  -o-transition: all, 0.5s, ease-in-out;
+  transition: all, 0.5s, ease-in-out;
 }
-/* line 13, ../scss/molecules/_jumbotrone.scss */
+/* line 14, ../scss/molecules/_jumbotrone.scss */
 .jumbotron .jumbotron-info-block h1 {
   color: #fff;
   font-weight: 900;
+  -webkit-transition: all, 0.5s, ease-in-out;
+  -moz-transition: all, 0.5s, ease-in-out;
+  -ms-transition: all, 0.5s, ease-in-out;
+  -o-transition: all, 0.5s, ease-in-out;
+  transition: all, 0.5s, ease-in-out;
   font-size: 66px;
   line-height: 66px;
 }
-@media only screen and (max-width: 480px) {
-  /* line 13, ../scss/molecules/_jumbotrone.scss */
-  .jumbotron .jumbotron-info-block h1 {
-    font-size: 46px;
-    line-height: 50px;
-  }
-}
-/* line 22, ../scss/molecules/_jumbotrone.scss */
+/* line 21, ../scss/molecules/_jumbotrone.scss */
 .jumbotron .jumbotron-info-block a {
   margin: 20px 0 0 0;
   display: inline-block;
   color: #fff;
   position: relative;
 }
-/* line 29, ../scss/molecules/_jumbotrone.scss */
+/* line 28, ../scss/molecules/_jumbotrone.scss */
 .jumbotron .jumbotron-info-block a:after {
   content: "...";
 }
-/* line 33, ../scss/molecules/_jumbotrone.scss */
+/* line 32, ../scss/molecules/_jumbotrone.scss */
 .jumbotron .jumbotron-info-block a .jumbotron-icon {
   position: relative;
   padding-left: 28px;
 }
-/* line 37, ../scss/molecules/_jumbotrone.scss */
+/* line 36, ../scss/molecules/_jumbotrone.scss */
 .jumbotron .jumbotron-info-block a .jumbotron-icon:before {
   display: inline-block;
   position: absolute;
   top: 0;
   left: 0;
   font-size: 20px;
+}
+@media only screen and (max-width: 768px) {
+  /* line 3, ../scss/molecules/_jumbotrone.scss */
+  .jumbotron {
+    height: 490px;
+  }
+  /* line 56, ../scss/molecules/_jumbotrone.scss */
+  .jumbotron .jumbotron-info-block h1 {
+    font-size: 46px;
+    line-height: 50px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* line 3, ../scss/molecules/_jumbotrone.scss */
+  .jumbotron {
+    height: 390px;
+  }
+  /* line 68, ../scss/molecules/_jumbotrone.scss */
+  .jumbotron .jumbotron-info-block {
+    margin: 25px 0 0;
+  }
+  /* line 71, ../scss/molecules/_jumbotrone.scss */
+  .jumbotron .jumbotron-info-block h1 {
+    font-size: 37px;
+    line-height: 45px;
+  }
 }
 
 /* line 1, ../scss/molecules/_promo_block.scss */
@@ -1817,4 +1853,9 @@ body .container {
   line-height: 26px;
   font-weight: 300;
   margin-bottom: 40px;
+}
+
+/* line 5, ../scss/molecules/_text_block.scss */
+.text-block .add-padding-inside {
+  padding: 32px 40px 32px 40px;
 }
