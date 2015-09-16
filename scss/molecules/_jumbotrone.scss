@@ -15,7 +15,8 @@
 			color:#fff;
 			font-weight: 900;			
 			@include transition(all, 0.5s, ease-in-out);	
-			@include xxlarge-font-size();			
+			@include xxlarge-font-size();
+			margin: 0;			
 		}
 		
 		a{

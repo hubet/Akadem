@@ -22,3 +22,12 @@
 @mixin main-layout-padding(){
   padding: $main-layout-margin*0.8 $main-layout-margin $main-layout-margin*0.8 $main-layout-margin;
 }
+
+
+@mixin text-layout-padding(){
+  padding: $main-layout-margin*0.8 $main-layout-margin $main-layout-margin*0.8 $main-layout-margin;
+
+  @include tablet-portrait-and-below{
+    padding: 0 $main-layout-margin 0 $main-layout-margin;
+  }
+}

@@ -7,7 +7,7 @@
 		margin-bottom: $small-layout-margin; 	
 	}
 
-	h3{
+	.welcome-header{
 		width: 85%;
 		margin: 0 auto 0 auto;
 		@include light-font-weight();

@@ -3,6 +3,6 @@
 
 .text-block{
 	.add-padding-inside{
-		@include main-layout-padding(); 
+		@include text-layout-padding(); 
 	}
 }
