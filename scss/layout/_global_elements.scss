@@ -50,10 +50,22 @@ a:hover{
 	&:after{
 		content: "";
 		display: block;
-		height: $Footer-height; 
+		height: $Footer-height + 70px; // Footer top margin
+	}
+
+	@include tablet-landscape-and-below{
+		min-height: 0;
+		margin-bottom: $main-layout-margin;
+
+		&:after{
+			height: auto;
+		}
 	}
 }
 
-.container {
+
+body .container {
 	padding: 0 $small-layout-margin 0 $small-layout-margin;
 }
+
+

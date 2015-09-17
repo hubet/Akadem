@@ -1,13 +1,21 @@
 // ---------------------------------------------------------------
 // Header
 
-nav.main-nav{
+.main-nav{
+@include transition(all 0.5s, ease-in-out);	
   background-color: $color-space-black;
   height: $height-main-nav; 	  
   position: relative;
+  z-index: 200;
+
+  @include tablet-portrait-and-below{	
+  		height: $height-main-nav - 20px;
+  }
 }
 
 
+
+// logo
 .main-logo{
 	display: block;
 	width: 125px;
@@ -27,10 +35,32 @@ nav.main-nav{
 }
 
 
-  
-// ---------------------------------------------------------------
-// main navigation 
 
+// menu holder 
+.menu-holder{	
+	background: transparent;		
+	@include tablet-portrait-and-below{
+		@include transition(height, 0.5s, ease-in-out);	
+		overflow: hidden;		
+		max-height: 0;
+		position: absolute;
+		left: 0;
+		right: 0;		
+		top: 100%;
+		background: $color-mobile-menu-bg;
+	}
+}
+
+.menuOpen .menu-holder{
+	@include tablet-portrait-and-below{		
+		max-height: 400%;				
+		padding: $small-layout-margin;	
+	}
+}
+
+
+
+// Main menu
 .main-menu{ 
 	list-style: none;
 	padding: 50px 0 0 95px;	 
@@ -40,9 +70,7 @@ nav.main-nav{
 		float: left;		
 		margin-right: $normal-font-size * 2.5;
 
-		&:last-child{
-			margin-right: 0;
-		}
+		&:last-child{ margin-right: 0; }
 
 		a{
 			font-size: $normal-font-size;
@@ -54,6 +82,26 @@ nav.main-nav{
 			&:hover{
 				color: $color-silver-grey;
 			}
+		}  
+	}
+
+	@include tablet-portrait-and-below{
+		padding: 0;
+		float: none;
+		width: 100;
+		text-align: center;		
+
+		li{
+			float: none;
+			display: block;
+			margin: 0;			
+			border-bottom: 1px solid $color-space-black;
+
+			a{
+				display: block;
+				width: 100%;
+				line-height: $main-layout-margin;
+			}
 		}
 	}
 }
@@ -61,7 +109,7 @@ nav.main-nav{
 
 
 
-
+// Phones list
 .phone-numbers{
 	list-style: none;
 	padding: 50px 0 0;	 
@@ -84,4 +132,57 @@ nav.main-nav{
 			cursor: default;
 		}
 	}
+
+	@include tablet-landscape-and-below{
+		padding: 25px 0 0;
+
+		li{
+			float: none;
+			display: block;
+			margin-left: 0px;
+		}
+	}
+
+	@include tablet-portrait-and-below{
+		padding: 0;
+		width: 100%;
+		text-align: center;	
+		margin: $small-layout-margin 0 $small-layout-margin 0;
+	}
+
+}
+
+
+
+
+
+// Menu icon (Hamburger)
+#menuIcon { 
+    position: absolute;
+    top: 50%;
+    margin-top: -17px;
+    right: $small-layout-margin;
+    display: none;        
+    background-color: $color-mobile-menu-bg;
+
+    a{
+    	position: relative;
+		line-height: 34px;
+    	padding: 0 16px;
+		display: block;		
+		color:#fff;
+		text-decoration: none;		
+		text-transform: uppercase;
+		font-size: 11px;
+		@include transition(color .2s ease);
+
+		&:hover{
+			color: $color-silver-grey;
+		}		
+    }
+
+    @include tablet-portrait-and-below{
+      display: inline-block;
+    }
+
 }

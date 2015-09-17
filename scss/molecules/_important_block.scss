@@ -16,32 +16,36 @@
 		padding: $long-layout-margin  $long-layout-margin+$main-layout-margin;
 
 		@include tablet-portrait-and-below{
-			padding: $main-layout-margin+$small-layout-margin;
+			padding: $main-layout-margin;
 		}
-	}
 
-	.important-block-header{
-		color: $color-dust-gray;
-		font-weight: 900;			
-		margin-bottom: $main-layout-margin;
-		@include xxlarge-font-size();			
-		@include mobile-landscape-and-below{
-		    @include xlarge-font-size();
-		}  		
+		.important-block-header{
+			color: $color-dust-gray;
+			font-weight: 900;			
+			margin-bottom: $main-layout-margin;
+			@include xxlarge-font-size();		
 
-		span{
-			display: block;
-			@include tablet-portrait-and-below{
-				display: inline;
+			@include tablet-portrait-and-below{ 
+				@include xlarge-font-size();		
+			}
+
+			@include mobile-landscape-and-below{
+			    @include large-font-size();
+			}
+
+			span{
+				display: block;
+				@include tablet-portrait-and-below{
+					display: inline;
+				}
 			}
 		}
-	}
 
-	p{
-		@include xnormal-font-size();	
-		@include light-font-weight();
-		margin-bottom: $main-layout-margin;
+		p{
+			@include xnormal-font-size();	
+			@include light-font-weight();
+			margin-bottom: $main-layout-margin;
+		}		
 	}
-
 
 }
