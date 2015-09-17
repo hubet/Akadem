@@ -52,6 +52,15 @@ a:hover{
 		display: block;
 		height: $Footer-height + 70px; // Footer top margin
 	}
+
+	@include tablet-landscape-and-below{
+		min-height: 0;
+		margin-bottom: $main-layout-margin;
+
+		&:after{
+			height: auto;
+		}
+	}
 }
 
 

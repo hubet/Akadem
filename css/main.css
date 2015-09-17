@@ -480,8 +480,19 @@ a:hover {
   display: block;
   height: 370px;
 }
+@media only screen and (max-width: 1024px) {
+  /* line 45, ../scss/layout/_global_elements.scss */
+  .site-wrap {
+    min-height: 0;
+    margin-bottom: 40px;
+  }
+  /* line 60, ../scss/layout/_global_elements.scss */
+  .site-wrap:after {
+    height: auto;
+  }
+}
 
-/* line 58, ../scss/layout/_global_elements.scss */
+/* line 67, ../scss/layout/_global_elements.scss */
 body .container {
   padding: 0 25px 0 25px;
 }
