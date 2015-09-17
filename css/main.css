@@ -216,7 +216,7 @@ p {
   -ms-transition: all 0.5s, ease-in-out;
   -o-transition: all 0.5s, ease-in-out;
   transition: all 0.5s, ease-in-out;
-  background-color: #222222;
+  background-color: #131313;
   height: 120px;
   position: relative;
   z-index: 200;
@@ -264,7 +264,7 @@ p {
     left: 0;
     right: 0;
     top: 100%;
-    background: #111111;
+    background: #000;
   }
 }
 
@@ -320,7 +320,7 @@ p {
     float: none;
     display: block;
     margin: 0;
-    border-bottom: 1px solid #222222;
+    border-bottom: 1px solid #131313;
   }
   /* line 100, ../scss/layout/_header.scss */
   .main-menu li a {
@@ -383,7 +383,7 @@ p {
   margin-top: -17px;
   right: 25px;
   display: none;
-  background-color: #111111;
+  background-color: #000;
 }
 /* line 168, ../scss/layout/_header.scss */
 #menuIcon a {
@@ -414,7 +414,7 @@ p {
 
 /* line 4, ../scss/layout/_footer.scss */
 .site-footer {
-  background-color: #222222;
+  background-color: #131313;
   height: 300px;
 }
 
