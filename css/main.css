@@ -74,75 +74,81 @@ h1 {
   font-size: 37px;
   line-height: 45px;
   font-weight: 900;
+  color: #474747;
   margin: 0 0 23px 0;
 }
 
-/* line 33, ../scss/_typography.scss */
+/* line 34, ../scss/_typography.scss */
 h2 {
   font-size: 29px;
   line-height: 41px;
   font-weight: 900;
+  color: #474747;
   margin: 19px 0 23px 0;
 }
 
-/* line 39, ../scss/_typography.scss */
+/* line 41, ../scss/_typography.scss */
 h3 {
   font-size: 23px;
   line-height: 33px;
   font-weight: 900;
+  color: #474747;
   margin: 15px 0 23px 0;
 }
 
-/* line 45, ../scss/_typography.scss */
+/* line 48, ../scss/_typography.scss */
 h4 {
   font-size: 23px;
   line-height: 33px;
   font-weight: normal;
+  color: #474747;
   margin: 0 0 23px 0;
 }
 
-/* line 51, ../scss/_typography.scss */
+/* line 55, ../scss/_typography.scss */
 h5 {
   font-size: 19px;
   line-height: 26px;
   font-weight: normal;
+  color: #474747;
   margin: 0 0 23px 0;
 }
 
-/* line 57, ../scss/_typography.scss */
+/* line 62, ../scss/_typography.scss */
 h5 {
   font-size: 15px;
   line-height: 21px;
   font-weight: bold;
+  color: #474747;
   margin: 0 0 23px 0;
 }
 
-/* line 63, ../scss/_typography.scss */
+/* line 69, ../scss/_typography.scss */
 p {
   margin-bottom: 21px;
 }
 
-/* line 71, ../scss/_typography.scss */
+/* line 77, ../scss/_typography.scss */
 .text-left {
   text-align: left;
 }
 
-/* line 72, ../scss/_typography.scss */
+/* line 78, ../scss/_typography.scss */
 .text-right {
   text-align: right;
 }
 
-/* line 73, ../scss/_typography.scss */
+/* line 79, ../scss/_typography.scss */
 .text-center {
   text-align: center;
 }
 
-/* line 74, ../scss/_typography.scss */
+/* line 80, ../scss/_typography.scss */
 .text-justify {
   text-align: justify;
 }
 
-/* line 75, ../scss/_typography.scss */
+/* line 81, ../scss/_typography.scss */
 .text-nowrap {
   white-space: nowrap;
 }
@@ -154,7 +160,7 @@ p {
   font-weight: normal;
   font-style: normal;
 }
-/* line 91, ../scss/_typography.scss */
+/* line 97, ../scss/_typography.scss */
 [class^="icon-"], [class*=" icon-"] {
   font-family: 'Akademservis-font';
   speak: none;
@@ -168,37 +174,37 @@ p {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 106, ../scss/_typography.scss */
+/* line 112, ../scss/_typography.scss */
 .icon-svg-video:before {
   content: "\e600";
 }
 
-/* line 109, ../scss/_typography.scss */
+/* line 115, ../scss/_typography.scss */
 .icon-svg-brain:before {
   content: "\e601";
 }
 
-/* line 112, ../scss/_typography.scss */
+/* line 118, ../scss/_typography.scss */
 .icon-svg-costume:before {
   content: "\e602";
 }
 
-/* line 115, ../scss/_typography.scss */
+/* line 121, ../scss/_typography.scss */
 .icon-svg-deal:before {
   content: "\e603";
 }
 
-/* line 118, ../scss/_typography.scss */
+/* line 124, ../scss/_typography.scss */
 .icon-svg-delivery:before {
   content: "\e604";
 }
 
-/* line 121, ../scss/_typography.scss */
+/* line 127, ../scss/_typography.scss */
 .icon-svg-people:before {
   content: "\e605";
 }
 
-/* line 124, ../scss/_typography.scss */
+/* line 130, ../scss/_typography.scss */
 .icon-svg-photo:before {
   content: "\e606";
 }
@@ -1822,6 +1828,7 @@ body .container {
   width: 85%;
   margin: 0 auto 0 auto;
   font-weight: 300;
+  color: #aaaaaa;
 }
 
 /* line 6, ../scss/molecules/_services_block.scss */
@@ -1871,36 +1878,43 @@ body .container {
 @media only screen and (max-width: 768px) {
   /* line 15, ../scss/molecules/_important_block.scss */
   .important-block .important-block-padding {
-    padding: 65px;
+    padding: 40px;
   }
 }
-/* line 23, ../scss/molecules/_important_block.scss */
-.important-block .important-block-header {
+/* line 22, ../scss/molecules/_important_block.scss */
+.important-block .important-block-padding .important-block-header {
   color: #474747;
   font-weight: 900;
   margin-bottom: 40px;
   font-size: 66px;
   line-height: 66px;
 }
-@media only screen and (max-width: 480px) {
-  /* line 23, ../scss/molecules/_important_block.scss */
-  .important-block .important-block-header {
+@media only screen and (max-width: 768px) {
+  /* line 22, ../scss/molecules/_important_block.scss */
+  .important-block .important-block-padding .important-block-header {
     font-size: 46px;
     line-height: 50px;
   }
 }
-/* line 32, ../scss/molecules/_important_block.scss */
-.important-block .important-block-header span {
+@media only screen and (max-width: 480px) {
+  /* line 22, ../scss/molecules/_important_block.scss */
+  .important-block .important-block-padding .important-block-header {
+    font-size: 37px;
+    line-height: 45px;
+  }
+}
+/* line 36, ../scss/molecules/_important_block.scss */
+.important-block .important-block-padding .important-block-header span {
   display: block;
 }
 @media only screen and (max-width: 768px) {
-  /* line 32, ../scss/molecules/_important_block.scss */
-  .important-block .important-block-header span {
+  /* line 36, ../scss/molecules/_important_block.scss */
+  .important-block .important-block-padding .important-block-header span {
     display: inline;
   }
 }
-/* line 40, ../scss/molecules/_important_block.scss */
-.important-block p {
+/* line 44, ../scss/molecules/_important_block.scss */
+.important-block .important-block-padding p {
   font-size: 19px;
   line-height: 26px;
   font-weight: 300;
@@ -1909,11 +1923,5 @@ body .container {
 
 /* line 5, ../scss/molecules/_text_block.scss */
 .text-block .add-padding-inside {
-  padding: 32px 40px 32px 40px;
-}
-@media only screen and (max-width: 768px) {
-  /* line 5, ../scss/molecules/_text_block.scss */
-  .text-block .add-padding-inside {
-    padding: 0 40px 0 40px;
-  }
+  padding: 0 40px 0 40px;
 }

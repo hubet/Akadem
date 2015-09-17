@@ -27,36 +27,42 @@
 h1 { 
 	@include large-font-size();
 	@include xbold-font-weight();
+  color: $color-dust-gray;
 	margin: 0 0 $big-font-size 0; 
 }
 
 h2 { 
 	@include xbig-font-size();
 	@include xbold-font-weight();
+  color: $color-dust-gray;
 	margin: $xnormal-font-size 0 $big-font-size 0;
 }
 
 h3 { 
 	@include big-font-size();
 	@include xbold-font-weight();
+  color: $color-dust-gray;
 	margin: $normal-font-size  0 $big-font-size 0; 
 }
 
 h4 { 
 	@include big-font-size();
 	@include normal-font-weight();
+  color: $color-dust-gray;
 	margin: 0 0 $big-font-size 0; 
 }
 
 h5 { 
 	@include xnormal-font-size();
 	@include normal-font-weight();
+  color: $color-dust-gray;
 	margin: 0 0 $big-font-size 0;
 }
 
 h5 { 
 	@include normal-font-size();
 	@include bold-font-weight();
+  color: $color-dust-gray;
 	margin: 0 0 $big-font-size 0; 
 }
 
