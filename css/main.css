@@ -225,22 +225,29 @@ p {
 @media only screen and (max-width: 768px) {
   /* line 4, ../scss/layout/_header.scss */
   .main-nav {
-    height: 100px;
+    height: 76px;
   }
 }
-
-/* line 21, ../scss/layout/_header.scss */
-.main-logo-header {
+/* line 20, ../scss/layout/_header.scss */
+.main-nav .main-logo-header {
   float: left;
   margin-top: 28px;
 }
+@media only screen and (max-width: 768px) {
+  /* line 20, ../scss/layout/_header.scss */
+  .main-nav .main-logo-header {
+    width: 90px;
+    height: 33px;
+    margin-top: 20px;
+  }
+}
 
-/* line 29, ../scss/layout/_header.scss */
+/* line 39, ../scss/layout/_header.scss */
 .menu-holder {
   background: transparent;
 }
 @media only screen and (max-width: 768px) {
-  /* line 29, ../scss/layout/_header.scss */
+  /* line 39, ../scss/layout/_header.scss */
   .menu-holder {
     -webkit-transition: height, 0.5s, ease-in-out;
     -moz-transition: height, 0.5s, ease-in-out;
@@ -253,60 +260,60 @@ p {
     left: 0;
     right: 0;
     top: 100%;
-    background: #000000;
+    background: #0a0a0a;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 43, ../scss/layout/_header.scss */
+  /* line 53, ../scss/layout/_header.scss */
   .menuOpen .menu-holder {
     max-height: 400%;
     padding: 25px;
   }
 }
 
-/* line 53, ../scss/layout/_header.scss */
+/* line 63, ../scss/layout/_header.scss */
 .main-menu {
   list-style: none;
   padding: 50px 0 0 95px;
   float: left;
 }
-/* line 58, ../scss/layout/_header.scss */
+/* line 68, ../scss/layout/_header.scss */
 .main-menu li {
   float: left;
   margin-right: 37.5px;
 }
-/* line 62, ../scss/layout/_header.scss */
+/* line 72, ../scss/layout/_header.scss */
 .main-menu li:last-child {
   margin-right: 0;
 }
-/* line 64, ../scss/layout/_header.scss */
+/* line 74, ../scss/layout/_header.scss */
 .main-menu li a {
   font-size: 15px;
   line-height: 21px;
   color: #fff;
   text-decoration: none;
 }
-/* line 70, ../scss/layout/_header.scss */
+/* line 80, ../scss/layout/_header.scss */
 .main-menu li a:hover {
   color: #666666;
 }
 @media only screen and (max-width: 768px) {
-  /* line 53, ../scss/layout/_header.scss */
+  /* line 63, ../scss/layout/_header.scss */
   .main-menu {
     padding: 0;
     float: none;
     width: 100;
     text-align: center;
   }
-  /* line 82, ../scss/layout/_header.scss */
+  /* line 92, ../scss/layout/_header.scss */
   .main-menu li {
     float: none;
     display: block;
     margin: 0;
     border-bottom: 1px solid #1e1e1e;
   }
-  /* line 88, ../scss/layout/_header.scss */
+  /* line 98, ../scss/layout/_header.scss */
   .main-menu li a {
     display: block;
     width: 100%;
@@ -314,22 +321,22 @@ p {
   }
 }
 
-/* line 101, ../scss/layout/_header.scss */
+/* line 111, ../scss/layout/_header.scss */
 .phone-numbers {
   list-style: none;
   padding: 50px 0 0;
   float: right;
 }
-/* line 106, ../scss/layout/_header.scss */
+/* line 116, ../scss/layout/_header.scss */
 .phone-numbers li {
   float: left;
   margin-left: 21px;
 }
-/* line 110, ../scss/layout/_header.scss */
+/* line 120, ../scss/layout/_header.scss */
 .phone-numbers li:first-child {
   margin-left: 0;
 }
-/* line 114, ../scss/layout/_header.scss */
+/* line 124, ../scss/layout/_header.scss */
 .phone-numbers li a {
   font-size: 15px;
   line-height: 21px;
@@ -339,11 +346,11 @@ p {
   cursor: default;
 }
 @media only screen and (max-width: 992px) {
-  /* line 101, ../scss/layout/_header.scss */
+  /* line 111, ../scss/layout/_header.scss */
   .phone-numbers {
     padding: 25px 0 0;
   }
-  /* line 127, ../scss/layout/_header.scss */
+  /* line 137, ../scss/layout/_header.scss */
   .phone-numbers li {
     float: none;
     display: block;
@@ -351,7 +358,7 @@ p {
   }
 }
 @media only screen and (max-width: 768px) {
-  /* line 101, ../scss/layout/_header.scss */
+  /* line 111, ../scss/layout/_header.scss */
   .phone-numbers {
     padding: 0;
     width: 100%;
@@ -360,16 +367,16 @@ p {
   }
 }
 
-/* line 147, ../scss/layout/_header.scss */
+/* line 157, ../scss/layout/_header.scss */
 #menuIcon {
   position: absolute;
   top: 50%;
   margin-top: -17px;
   right: 25px;
   display: none;
-  background-color: #000000;
+  background-color: #0a0a0a;
 }
-/* line 155, ../scss/layout/_header.scss */
+/* line 165, ../scss/layout/_header.scss */
 #menuIcon a {
   position: relative;
   line-height: 34px;
@@ -385,12 +392,12 @@ p {
   -o-transition: color 0.2s ease;
   transition: color 0.2s ease;
 }
-/* line 166, ../scss/layout/_header.scss */
+/* line 176, ../scss/layout/_header.scss */
 #menuIcon a:hover {
   color: #666666;
 }
 @media only screen and (max-width: 768px) {
-  /* line 147, ../scss/layout/_header.scss */
+  /* line 157, ../scss/layout/_header.scss */
   #menuIcon {
     display: inline-block;
   }
@@ -1838,19 +1845,22 @@ body .container {
 }
 /* line 25, ../scss/molecules/_promo_block.scss */
 .promo-block a.link-to-page {
+  display: inline-block;
   color: #fff;
   text-decoration: none;
   border-bottom: 1px solid #fff;
   font-size: 23px;
   line-height: 33px;
+  margin-bottom: 6px;
 }
-/* line 31, ../scss/molecules/_promo_block.scss */
+/* line 33, ../scss/molecules/_promo_block.scss */
 .promo-block a.link-to-page:hover {
   color: #fff;
   text-decoration: none;
-  border-bottom: 0px;
+  border-bottom: 0;
+  padding-bottom: 1px;
 }
-/* line 38, ../scss/molecules/_promo_block.scss */
+/* line 41, ../scss/molecules/_promo_block.scss */
 .promo-block .price {
   display: block;
   margin-top: -5px;
@@ -1859,20 +1869,20 @@ body .container {
   font-weight: 900;
 }
 @media only screen and (max-width: 992px) {
-  /* line 38, ../scss/molecules/_promo_block.scss */
+  /* line 41, ../scss/molecules/_promo_block.scss */
   .promo-block .price {
     font-size: 37px;
     line-height: 45px;
   }
 }
-/* line 48, ../scss/molecules/_promo_block.scss */
+/* line 51, ../scss/molecules/_promo_block.scss */
 .promo-block p {
   margin: 15px 0 0;
   font-size: 15px;
   line-height: 21px;
 }
 
-/* line 54, ../scss/molecules/_promo_block.scss */
+/* line 57, ../scss/molecules/_promo_block.scss */
 .promo-block-minus-margin {
   margin: -45px auto 64px auto;
 }
@@ -1891,11 +1901,11 @@ body .container {
   color: #aaaaaa;
 }
 
-/* line 6, ../scss/molecules/_services_block.scss */
+/* line 3, ../scss/molecules/_services_block.scss */
 .services-block .services-cell {
   padding: 32px 40px 32px 40px;
 }
-/* line 9, ../scss/molecules/_services_block.scss */
+/* line 6, ../scss/molecules/_services_block.scss */
 .services-block .services-cell .sevices-heading {
   position: relative;
   color: #474747;
@@ -1904,14 +1914,14 @@ body .container {
   font-size: 19px;
   line-height: 26px;
 }
-/* line 17, ../scss/molecules/_services_block.scss */
+/* line 14, ../scss/molecules/_services_block.scss */
 .services-block .services-cell .services-icon {
   position: absolute;
   top: -3px;
   left: -40px;
   font-size: 32px;
 }
-/* line 24, ../scss/molecules/_services_block.scss */
+/* line 21, ../scss/molecules/_services_block.scss */
 .services-block .services-cell p {
   margin: 0;
 }
@@ -2007,4 +2017,10 @@ body .container {
 /* line 13, ../scss/molecules/_breadcrumbs.scss */
 .breadcrumbs a {
   text-decoration: none;
+}
+@media only screen and (max-width: 768px) {
+  /* line 3, ../scss/molecules/_breadcrumbs.scss */
+  .breadcrumbs {
+    display: none;
+  }
 }
