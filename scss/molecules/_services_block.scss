@@ -4,7 +4,7 @@
 .services-block{
 
 	.services-cell{
-		@include main-layout-padding();
+		@include main-layout-padding(nochange);
 
 		.sevices-heading{
 			position: relative;

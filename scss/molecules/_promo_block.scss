@@ -7,7 +7,7 @@
 	}
 
 	.promo-cell{		
-		@include main-layout-padding();
+		@include main-layout-padding(nochange);
 		display: table-cell;
 		width: 33.33333%;
 		min-width: 33.33333%;

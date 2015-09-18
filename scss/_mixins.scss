@@ -1,4 +1,4 @@
-@mixin transition($args...) {
+@mixin transition($args...){
   -webkit-transition: $args;
   -moz-transition: $args;
   -ms-transition: $args;
@@ -7,23 +7,34 @@
 }
 
 
-@mixin clearfix() {
-  &:before,
-  &:after {
-    content: " "; // 1
-    display: table; // 2
-  }
-  &:after {
-    clear: both;
-  }
+@mixin clearfix(){
+
+	&:before, &:after{
+		content: " ";
+		display: table;
+	}
+
+	&:after {
+		clear: both;
+	}
 }
 
 
-@mixin main-layout-padding(){
-  padding: $main-layout-margin*0.8 $main-layout-margin $main-layout-margin*0.8 $main-layout-margin;
+@mixin main-layout-padding($change_on_mobile: 1){
+	padding: $main-layout-margin*0.8 $main-layout-margin $main-layout-margin*0.8 $main-layout-margin;
+
+	@if $change_on_mobile == 1{
+		@include mobile-landscape-and-below(){
+			padding: $main-layout-margin*0.8 0;
+		}
+	}
 }
 
 
 @mixin text-layout-padding(){
-  padding: 0 $main-layout-margin 0 $main-layout-margin;
+	padding: 0 $main-layout-margin 0 $main-layout-margin;
+
+	@include mobile-landscape-and-below(){
+		padding: 0;
+	}
 }

@@ -20,7 +20,7 @@
 		li{
 			line-height: $normal-line-height + 3px;
 
-			a{
+			a, a:active, a:visited{
 				text-decoration: none;
 				display: inline-block;
 				color: $color-silver-grey;

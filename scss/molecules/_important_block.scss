@@ -7,16 +7,15 @@
 	-moz-box-shadow: inset 0px 0px 300px -100px rgba(0,0,0,0.5);
 	box-shadow: inset 0px 0px 300px -100px rgba(0,0,0,0.5);
 
-	@include tablet-portrait-and-below{
-		padding-left: 0px;
-		padding-right: 0px;
-	}
-
 	.important-block-padding{
 		padding: $long-layout-margin $long-layout-margin+$main-layout-margin;
 
 		@include tablet-portrait-and-below{
 			padding: $main-layout-margin;
+		}
+
+		@include mobile-landscape-and-below{
+			padding: $small-layout-margin 0;
 		}
 
 		.important-block-header{
