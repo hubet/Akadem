@@ -1900,17 +1900,18 @@ body .container {
   position: relative;
   color: #474747;
   margin: 0 0 5px;
+  width: 100%;
   font-size: 19px;
   line-height: 26px;
 }
-/* line 16, ../scss/molecules/_services_block.scss */
+/* line 17, ../scss/molecules/_services_block.scss */
 .services-block .services-cell .services-icon {
   position: absolute;
   top: -3px;
   left: -40px;
   font-size: 32px;
 }
-/* line 23, ../scss/molecules/_services_block.scss */
+/* line 24, ../scss/molecules/_services_block.scss */
 .services-block .services-cell p {
   margin: 0;
 }
