@@ -69,7 +69,7 @@ strong {
   font-weight: bold;
 }
 
-/* line 27, ../scss/_typography.scss */
+/* line 28, ../scss/_typography.scss */
 h1 {
   font-size: 37px;
   line-height: 45px;
@@ -78,7 +78,7 @@ h1 {
   margin: 0 0 23px 0;
 }
 
-/* line 34, ../scss/_typography.scss */
+/* line 35, ../scss/_typography.scss */
 h2 {
   font-size: 29px;
   line-height: 41px;
@@ -87,7 +87,7 @@ h2 {
   margin: 19px 0 23px 0;
 }
 
-/* line 41, ../scss/_typography.scss */
+/* line 42, ../scss/_typography.scss */
 h3 {
   font-size: 23px;
   line-height: 33px;
@@ -96,7 +96,7 @@ h3 {
   margin: 15px 0 23px 0;
 }
 
-/* line 48, ../scss/_typography.scss */
+/* line 49, ../scss/_typography.scss */
 h4 {
   font-size: 23px;
   line-height: 33px;
@@ -105,7 +105,7 @@ h4 {
   margin: 0 0 23px 0;
 }
 
-/* line 55, ../scss/_typography.scss */
+/* line 56, ../scss/_typography.scss */
 h5 {
   font-size: 19px;
   line-height: 26px;
@@ -114,7 +114,7 @@ h5 {
   margin: 0 0 23px 0;
 }
 
-/* line 62, ../scss/_typography.scss */
+/* line 63, ../scss/_typography.scss */
 h5 {
   font-size: 15px;
   line-height: 21px;
@@ -123,32 +123,32 @@ h5 {
   margin: 0 0 23px 0;
 }
 
-/* line 69, ../scss/_typography.scss */
+/* line 70, ../scss/_typography.scss */
 p {
   margin-bottom: 21px;
 }
 
-/* line 77, ../scss/_typography.scss */
+/* line 78, ../scss/_typography.scss */
 .text-left {
   text-align: left;
 }
 
-/* line 78, ../scss/_typography.scss */
+/* line 79, ../scss/_typography.scss */
 .text-right {
   text-align: right;
 }
 
-/* line 79, ../scss/_typography.scss */
+/* line 80, ../scss/_typography.scss */
 .text-center {
   text-align: center;
 }
 
-/* line 80, ../scss/_typography.scss */
+/* line 81, ../scss/_typography.scss */
 .text-justify {
   text-align: justify;
 }
 
-/* line 81, ../scss/_typography.scss */
+/* line 82, ../scss/_typography.scss */
 .text-nowrap {
   white-space: nowrap;
 }
@@ -160,7 +160,7 @@ p {
   font-weight: normal;
   font-style: normal;
 }
-/* line 97, ../scss/_typography.scss */
+/* line 98, ../scss/_typography.scss */
 [class^="icon-"], [class*=" icon-"] {
   font-family: 'Akademservis-font';
   speak: none;
@@ -174,37 +174,37 @@ p {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 112, ../scss/_typography.scss */
+/* line 113, ../scss/_typography.scss */
 .icon-svg-video:before {
   content: "\e600";
 }
 
-/* line 115, ../scss/_typography.scss */
+/* line 116, ../scss/_typography.scss */
 .icon-svg-brain:before {
   content: "\e601";
 }
 
-/* line 118, ../scss/_typography.scss */
+/* line 119, ../scss/_typography.scss */
 .icon-svg-costume:before {
   content: "\e602";
 }
 
-/* line 121, ../scss/_typography.scss */
+/* line 122, ../scss/_typography.scss */
 .icon-svg-deal:before {
   content: "\e603";
 }
 
-/* line 124, ../scss/_typography.scss */
+/* line 125, ../scss/_typography.scss */
 .icon-svg-delivery:before {
   content: "\e604";
 }
 
-/* line 127, ../scss/_typography.scss */
+/* line 128, ../scss/_typography.scss */
 .icon-svg-people:before {
   content: "\e605";
 }
 
-/* line 130, ../scss/_typography.scss */
+/* line 131, ../scss/_typography.scss */
 .icon-svg-photo:before {
   content: "\e606";
 }
@@ -228,30 +228,18 @@ p {
   }
 }
 
-/* line 19, ../scss/layout/_header.scss */
-.main-logo {
-  display: block;
-  width: 125px;
-  height: 45px;
+/* line 20, ../scss/layout/_header.scss */
+.main-logo-header {
   float: left;
   margin-top: 28px;
 }
-/* line 27, ../scss/layout/_header.scss */
-.main-logo a {
-  display: block;
-  height: 100%;
-  widows: 100%;
-  text-indent: -99999px;
-  background: url("../img/akademservis-logo.png") no-repeat center;
-  background-size: 100% 100%;
-}
 
-/* line 40, ../scss/layout/_header.scss */
+/* line 28, ../scss/layout/_header.scss */
 .menu-holder {
   background: transparent;
 }
 @media only screen and (max-width: 768px) {
-  /* line 40, ../scss/layout/_header.scss */
+  /* line 28, ../scss/layout/_header.scss */
   .menu-holder {
     -webkit-transition: height, 0.5s, ease-in-out;
     -moz-transition: height, 0.5s, ease-in-out;
@@ -269,29 +257,29 @@ p {
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 54, ../scss/layout/_header.scss */
+  /* line 42, ../scss/layout/_header.scss */
   .menuOpen .menu-holder {
     max-height: 400%;
     padding: 25px;
   }
 }
 
-/* line 64, ../scss/layout/_header.scss */
+/* line 52, ../scss/layout/_header.scss */
 .main-menu {
   list-style: none;
   padding: 50px 0 0 95px;
   float: left;
 }
-/* line 69, ../scss/layout/_header.scss */
+/* line 57, ../scss/layout/_header.scss */
 .main-menu li {
   float: left;
   margin-right: 37.5px;
 }
-/* line 73, ../scss/layout/_header.scss */
+/* line 61, ../scss/layout/_header.scss */
 .main-menu li:last-child {
   margin-right: 0;
 }
-/* line 75, ../scss/layout/_header.scss */
+/* line 63, ../scss/layout/_header.scss */
 .main-menu li a {
   font-size: 15px;
   line-height: 21px;
@@ -303,26 +291,26 @@ p {
   -o-transition: color 0.2s ease;
   transition: color 0.2s ease;
 }
-/* line 82, ../scss/layout/_header.scss */
+/* line 70, ../scss/layout/_header.scss */
 .main-menu li a:hover {
   color: #666666;
 }
 @media only screen and (max-width: 768px) {
-  /* line 64, ../scss/layout/_header.scss */
+  /* line 52, ../scss/layout/_header.scss */
   .main-menu {
     padding: 0;
     float: none;
     width: 100;
     text-align: center;
   }
-  /* line 94, ../scss/layout/_header.scss */
+  /* line 82, ../scss/layout/_header.scss */
   .main-menu li {
     float: none;
     display: block;
     margin: 0;
     border-bottom: 1px solid #131313;
   }
-  /* line 100, ../scss/layout/_header.scss */
+  /* line 88, ../scss/layout/_header.scss */
   .main-menu li a {
     display: block;
     width: 100%;
@@ -330,22 +318,22 @@ p {
   }
 }
 
-/* line 113, ../scss/layout/_header.scss */
+/* line 101, ../scss/layout/_header.scss */
 .phone-numbers {
   list-style: none;
   padding: 50px 0 0;
   float: right;
 }
-/* line 118, ../scss/layout/_header.scss */
+/* line 106, ../scss/layout/_header.scss */
 .phone-numbers li {
   float: left;
   margin-left: 21px;
 }
-/* line 122, ../scss/layout/_header.scss */
+/* line 110, ../scss/layout/_header.scss */
 .phone-numbers li:first-child {
   margin-left: 0;
 }
-/* line 126, ../scss/layout/_header.scss */
+/* line 114, ../scss/layout/_header.scss */
 .phone-numbers li a {
   font-size: 15px;
   line-height: 21px;
@@ -355,11 +343,11 @@ p {
   cursor: default;
 }
 @media only screen and (max-width: 1024px) {
-  /* line 113, ../scss/layout/_header.scss */
+  /* line 101, ../scss/layout/_header.scss */
   .phone-numbers {
     padding: 25px 0 0;
   }
-  /* line 139, ../scss/layout/_header.scss */
+  /* line 127, ../scss/layout/_header.scss */
   .phone-numbers li {
     float: none;
     display: block;
@@ -367,7 +355,7 @@ p {
   }
 }
 @media only screen and (max-width: 768px) {
-  /* line 113, ../scss/layout/_header.scss */
+  /* line 101, ../scss/layout/_header.scss */
   .phone-numbers {
     padding: 0;
     width: 100%;
@@ -376,7 +364,7 @@ p {
   }
 }
 
-/* line 160, ../scss/layout/_header.scss */
+/* line 148, ../scss/layout/_header.scss */
 #menuIcon {
   position: absolute;
   top: 50%;
@@ -385,7 +373,7 @@ p {
   display: none;
   background-color: #000;
 }
-/* line 168, ../scss/layout/_header.scss */
+/* line 156, ../scss/layout/_header.scss */
 #menuIcon a {
   position: relative;
   line-height: 34px;
@@ -401,12 +389,12 @@ p {
   -o-transition: color 0.2s ease;
   transition: color 0.2s ease;
 }
-/* line 179, ../scss/layout/_header.scss */
+/* line 167, ../scss/layout/_header.scss */
 #menuIcon a:hover {
   color: #666666;
 }
 @media only screen and (max-width: 768px) {
-  /* line 160, ../scss/layout/_header.scss */
+  /* line 148, ../scss/layout/_header.scss */
   #menuIcon {
     display: inline-block;
   }
@@ -416,6 +404,51 @@ p {
 .site-footer {
   background-color: #131313;
   height: 300px;
+  font-size: 13px;
+  line-height: 18px;
+  padding: 40px 0;
+}
+/* line 10, ../scss/layout/_footer.scss */
+.site-footer h5 {
+  color: #fff;
+  margin: 24px 0 10px 0;
+}
+/* line 15, ../scss/layout/_footer.scss */
+.site-footer ul {
+  list-style: none;
+  font-size: 15px;
+  line-height: 21px;
+  margin-bottom: 40px;
+}
+/* line 20, ../scss/layout/_footer.scss */
+.site-footer ul li {
+  line-height: 24px;
+}
+/* line 23, ../scss/layout/_footer.scss */
+.site-footer ul li a {
+  text-decoration: none;
+  display: inline-block;
+  color: #666666;
+  -webkit-transition: color 0.2s ease;
+  -moz-transition: color 0.2s ease;
+  -ms-transition: color 0.2s ease;
+  -o-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+}
+/* line 29, ../scss/layout/_footer.scss */
+.site-footer ul li a:hover {
+  color: #fff;
+}
+@media only screen and (max-width: 1024px) {
+  /* line 4, ../scss/layout/_footer.scss */
+  .site-footer {
+    height: auto;
+    text-align: center;
+  }
+  /* line 40, ../scss/layout/_footer.scss */
+  .site-footer .main-logo-footer {
+    margin: 0 auto 21px auto;
+  }
 }
 
 /* line 1, ../scss/layout/_global_elements.scss */
@@ -495,6 +528,22 @@ a:hover {
 /* line 67, ../scss/layout/_global_elements.scss */
 body .container {
   padding: 0 25px 0 25px;
+}
+
+/* line 74, ../scss/layout/_global_elements.scss */
+.main-logo {
+  display: block;
+  width: 125px;
+  height: 45px;
+}
+/* line 79, ../scss/layout/_global_elements.scss */
+.main-logo a {
+  display: block;
+  height: 100%;
+  widows: 100%;
+  text-indent: -99999px;
+  background: url("../img/akademservis-logo.png") no-repeat center;
+  background-size: 100% 100%;
 }
 
 /* line 10, ../scss/bootstrap/_grid.scss */

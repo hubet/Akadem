@@ -3,6 +3,7 @@
 // ***********************************************************************
 // Font sizes
 
+@mixin small-font-size()    { font-size:   $small-font-size;    line-height: $small-line-height;   }
 @mixin normal-font-size()   { font-size:   $normal-font-size;   line-height: $normal-line-height;   }
 @mixin xnormal-font-size()  { font-size:   $xnormal-font-size;  line-height: $xnormal-line-height;  }
 @mixin big-font-size()      { font-size:   $big-font-size;      line-height: $big-line-height;      }
@@ -27,43 +28,43 @@
 h1 { 
 	@include large-font-size();
 	@include xbold-font-weight();
-  color: $color-dust-gray;
+  color: $color-dust-grey;
 	margin: 0 0 $big-font-size 0; 
 }
 
 h2 { 
 	@include xbig-font-size();
 	@include xbold-font-weight();
-  color: $color-dust-gray;
+  color: $color-dust-grey;
 	margin: $xnormal-font-size 0 $big-font-size 0;
 }
 
 h3 { 
 	@include big-font-size();
 	@include xbold-font-weight();
-  color: $color-dust-gray;
-	margin: $normal-font-size  0 $big-font-size 0; 
+  color: $color-dust-grey;
+	margin: $normal-font-size 0 $big-font-size 0;
 }
 
 h4 { 
 	@include big-font-size();
 	@include normal-font-weight();
-  color: $color-dust-gray;
-	margin: 0 0 $big-font-size 0; 
+  color: $color-dust-grey;
+	margin: 0 0 $big-font-size 0;
 }
 
 h5 { 
 	@include xnormal-font-size();
 	@include normal-font-weight();
-  color: $color-dust-gray;
+  color: $color-dust-grey;
 	margin: 0 0 $big-font-size 0;
 }
 
 h5 { 
 	@include normal-font-size();
 	@include bold-font-weight();
-  color: $color-dust-gray;
-	margin: 0 0 $big-font-size 0; 
+  color: $color-dust-grey;
+	margin: 0 0 $big-font-size 0;
 }
 
 p{

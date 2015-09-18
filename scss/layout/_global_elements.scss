@@ -1,12 +1,12 @@
-::selection, ::-moz-selection { 
-	background: #038cd6; 
+::selection, ::-moz-selection {
+	background: #038cd6;
 }
 
 *{
 	outline:none;     
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;	
+	-webkit-box-sizing: border-box;
 }  
    
 html{	
@@ -18,7 +18,7 @@ body{
 	min-width: 320px;
 	color: $color-silver-grey;
 	font-family: $base-font-family;
-	@include normal-font-size();	
+	@include normal-font-size();
 }
 	
 a, a:visited, a:active{
@@ -31,7 +31,7 @@ a:hover{
 	text-decoration: none;
 }
 
-.clearfix { @include clearfix(); } 
+.clearfix { @include clearfix(); }
 
 
 
@@ -44,8 +44,8 @@ a:hover{
 // We use it to make sticky footer
 .site-wrap {
 	width: 100%;
-	min-height: 100%;  
-	margin-bottom: -$Footer-height; 	
+	min-height: 100%;
+	margin-bottom: -$Footer-height;
 
 	&:after{
 		content: "";
@@ -69,3 +69,19 @@ body .container {
 }
 
 
+
+// Logo
+.main-logo{
+	display: block;
+	width: 125px;
+	height: 45px;
+
+	a{
+		display: block;
+		height: 100%;
+		widows: 100%;
+		text-indent: -99999px;
+		background: url('../img/akademservis-logo.png') no-repeat center;
+		background-size: 100% 100%;
+	}
+}

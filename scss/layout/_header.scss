@@ -2,99 +2,87 @@
 // Header
 
 .main-nav{
-@include transition(all 0.5s, ease-in-out);	
-  background-color: $color-space-black;
-  height: $height-main-nav; 	  
-  position: relative;
-  z-index: 200;
+@include transition(all 0.5s, ease-in-out);
+	background-color: $color-space-black;
+	height: $height-main-nav;
+	position: relative;
+	z-index: 200;
 
-  @include tablet-portrait-and-below{	
-  		height: $height-main-nav - 20px;
-  }
-}
-
-
-
-// logo
-.main-logo{
-	display: block;
-	width: 125px;
-	height: 45px;
-	float: left;
-	margin-top: 28px;
-
-
-	a{
-		display: block;
-		height: 100%;
-		widows: 100%;
-		text-indent: -99999px;  
-		background: url('../img/akademservis-logo.png') no-repeat center;
-		background-size: 100% 100%;
+	@include tablet-portrait-and-below{
+		height: $height-main-nav - 20px;
 	}
 }
 
 
 
+// Logo in global elements
+// logo for header
+.main-logo-header{
+	float: left;
+	margin-top: 28px;
+}
+
+
+
 // menu holder 
-.menu-holder{	
-	background: transparent;		
+.menu-holder{
+	background: transparent;
 	@include tablet-portrait-and-below{
 		@include transition(height, 0.5s, ease-in-out);	
-		overflow: hidden;		
+		overflow: hidden;
 		max-height: 0;
 		position: absolute;
 		left: 0;
-		right: 0;		
+		right: 0;
 		top: 100%;
 		background: $color-mobile-menu-bg;
 	}
 }
 
 .menuOpen .menu-holder{
-	@include tablet-portrait-and-below{		
-		max-height: 400%;				
-		padding: $small-layout-margin;	
+	@include tablet-portrait-and-below{
+		max-height: 400%;
+		padding: $small-layout-margin;
 	}
 }
 
 
 
 // Main menu
-.main-menu{ 
+.main-menu{
 	list-style: none;
-	padding: 50px 0 0 95px;	 
+	padding: 50px 0 0 95px;
 	float: left;
 
 	li{
-		float: left;		
+		float: left;
 		margin-right: $normal-font-size * 2.5;
 
 		&:last-child{ margin-right: 0; }
 
 		a{
 			font-size: $normal-font-size;
-			line-height: $normal-line-height; 			
-			color: #fff;			
+			line-height: $normal-line-height;
+			color: #fff;
 			text-decoration: none;
 			@include transition(color .2s ease);
 
 			&:hover{
 				color: $color-silver-grey;
 			}
-		}  
+		}
 	}
 
 	@include tablet-portrait-and-below{
 		padding: 0;
 		float: none;
 		width: 100;
-		text-align: center;		
+		text-align: center;
 
 		li{
 			float: none;
 			display: block;
-			margin: 0;			
+			margin: 0;
 			border-bottom: 1px solid $color-space-black;
 
 			a{
@@ -112,11 +100,11 @@
 // Phones list
 .phone-numbers{
 	list-style: none;
-	padding: 50px 0 0;	 
+	padding: 50px 0 0;
 	float: right;
 
 	li{
-		float: left;		
+		float: left;
 		margin-left: $normal-line-height;
 
 		&:first-child{
@@ -125,10 +113,10 @@
 
 		a{
 			font-size: $normal-font-size;
-			line-height: $normal-line-height; 
+			line-height: $normal-line-height;
 			font-weight: 400; 
-			color: $color-silver-grey;			
-			text-decoration: none;		
+			color: $color-silver-grey;
+			text-decoration: none;
 			cursor: default;
 		}
 	}
@@ -146,7 +134,7 @@
 	@include tablet-portrait-and-below{
 		padding: 0;
 		width: 100%;
-		text-align: center;	
+		text-align: center;
 		margin: $small-layout-margin 0 $small-layout-margin 0;
 	}
 
@@ -158,31 +146,31 @@
 
 // Menu icon (Hamburger)
 #menuIcon { 
-    position: absolute;
-    top: 50%;
-    margin-top: -17px;
-    right: $small-layout-margin;
-    display: none;        
-    background-color: $color-mobile-menu-bg;
+	position: absolute;
+	top: 50%;
+	margin-top: -17px;
+	right: $small-layout-margin;
+	display: none;
+	background-color: $color-mobile-menu-bg;
 
-    a{
-    	position: relative;
+	a{
+		position: relative;
 		line-height: 34px;
-    	padding: 0 16px;
-		display: block;		
+		padding: 0 16px;
+		display: block;
 		color:#fff;
-		text-decoration: none;		
+		text-decoration: none;
 		text-transform: uppercase;
 		font-size: 11px;
 		@include transition(color .2s ease);
 
 		&:hover{
 			color: $color-silver-grey;
-		}		
-    }
+		}
+	}
 
-    @include tablet-portrait-and-below{
-      display: inline-block;
-    }
+	@include tablet-portrait-and-below{
+		display: inline-block;
+	}
 
 }

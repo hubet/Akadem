@@ -2,6 +2,44 @@
 // Footer
 
 .site-footer {
-  background-color: $color-space-black;
-  height: $Footer-height; 
+	background-color: $color-space-black;
+	height: $Footer-height; 
+	@include small-font-size();
+	padding: $main-layout-margin 0;
+
+	h5{
+		color:#fff;
+		margin: 24px 0 10px 0;
+	}
+
+	ul{
+		list-style: none;
+		@include normal-font-size();
+		margin-bottom: $main-layout-margin;
+
+		li{
+			line-height: $normal-line-height + 3px;
+
+			a{
+				text-decoration: none;
+				display: inline-block;
+				color: $color-silver-grey;
+				@include transition(color .2s ease);
+
+				&:hover{
+					color:#fff;
+				}
+			}	
+		}
+	}
+
+	@include tablet-landscape-and-below{
+		height: auto;
+		text-align: center;
+
+		.main-logo-footer{
+			margin: 0 auto $normal-line-height auto;
+		}		
+	}
+
 }

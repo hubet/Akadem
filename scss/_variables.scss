@@ -5,7 +5,7 @@
 $color-stone-grey:      #e8e8e8;
 $color-steel-grey:      #aaaaaa;
 $color-silver-grey:     #666666;
-$color-dust-gray:       #474747;
+$color-dust-grey:       #474747;
 $color-space-black:     #131313;
 $color-mobile-menu-bg:  #000;
 
@@ -27,14 +27,15 @@ $anchor-hover-color:    #384b56;
 $Footer-height:         300px;
 $height-main-nav:       120px;  
 
-$small-layout-margin:	25px;  // *1.6  (Also used as main margin from the screen)
-$main-layout-margin:	40px;
-$medium-layout-margin:	64px;  // *1.6
-$long-layout-margin:	102px; // *1.6
+$small-layout-margin:   25px;    // *1.6  (Also used as main margin from the screen)
+$main-layout-margin:    40px;
+$medium-layout-margin:  64px;    // *1.6
+$long-layout-margin:    102px;   // *1.6
 
 
 // ---------------------------------------------------------------  
 // Typography 
+$small-font-size:       13px;  $small-line-height:     18px;
 $normal-font-size:      15px;  $normal-line-height:    21px;
 $xnormal-font-size:     19px;  $xnormal-line-height:   26px;
 $big-font-size:         23px;  $big-line-height:       33px;
