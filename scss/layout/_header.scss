@@ -4,6 +4,7 @@
 .main-nav{
 @include transition(all 0.5s, ease-in-out);
 	background-color: $color-space-black;
+	border-bottom: 1px solid #1a1a1a;
 	height: $height-main-nav;
 	position: relative;
 	z-index: 200;
@@ -64,8 +65,7 @@
 			font-size: $normal-font-size;
 			line-height: $normal-line-height;
 			color: #fff;
-			text-decoration: none;
-			@include transition(color .2s ease);
+			text-decoration: none;			
 
 			&:hover{
 				color: $color-silver-grey;
@@ -139,7 +139,6 @@
 	}
 
 }
-
 
 
 

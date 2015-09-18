@@ -6,8 +6,9 @@ $color-stone-grey:      #e8e8e8;
 $color-steel-grey:      #aaaaaa;
 $color-silver-grey:     #666666;
 $color-dust-grey:       #474747;
-$color-space-black:     #131313;
-$color-mobile-menu-bg:  #000;
+$color-shadow-black:    #272727;
+$color-space-black:     #1e1e1e;
+$color-mobile-menu-bg:  #000000;
 
 
 // ---------------------------------------------------------------
@@ -18,14 +19,14 @@ $color-vine:            #bf3e4c;
 
 // ---------------------------------------------------------------
 // Additional
-$anchor-color:          #2c7fac;
-$anchor-hover-color:    #384b56;
+$anchor-color:          #6696b4;
+$anchor-hover-color:    $color-silver-grey;
  
 
 // ---------------------------------------------------------------
 // Mesurements
 $Footer-height:         300px;
-$height-main-nav:       120px;  
+$height-main-nav:       120px;
 
 $small-layout-margin:   25px;    // *1.6  (Also used as main margin from the screen)
 $main-layout-margin:    40px;
@@ -35,13 +36,14 @@ $long-layout-margin:    102px;   // *1.6
 
 // ---------------------------------------------------------------  
 // Typography 
+$xsmall-font-size:      11px;  $xsmall-line-height:    16px;
 $small-font-size:       13px;  $small-line-height:     18px;
 $normal-font-size:      15px;  $normal-line-height:    21px;
 $xnormal-font-size:     19px;  $xnormal-line-height:   26px;
 $big-font-size:         23px;  $big-line-height:       33px;
 $xbig-font-size:        29px;  $xbig-line-height:      41px;
 $large-font-size:       37px;  $large-line-height:     45px;
-$xlarge-font-size:      46px;  $xlarge-line-height:    50px; 
+$xlarge-font-size:      46px;  $xlarge-line-height:    50px;
 $xxlarge-font-size:     66px;  $xxlarge-line-height:   66px;
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,700,900&subset=latin,cyrillic-ext,cyrillic);

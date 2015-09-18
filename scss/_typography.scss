@@ -3,7 +3,8 @@
 // ***********************************************************************
 // Font sizes
 
-@mixin small-font-size()    { font-size:   $small-font-size;    line-height: $small-line-height;   }
+@mixin xsmall-font-size()   { font-size:   $xsmall-font-size;   line-height: $xsmall-line-height;   }
+@mixin small-font-size()    { font-size:   $small-font-size;    line-height: $small-line-height;    }
 @mixin normal-font-size()   { font-size:   $normal-font-size;   line-height: $normal-line-height;   }
 @mixin xnormal-font-size()  { font-size:   $xnormal-font-size;  line-height: $xnormal-line-height;  }
 @mixin big-font-size()      { font-size:   $big-font-size;      line-height: $big-line-height;      }

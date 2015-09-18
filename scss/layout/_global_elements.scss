@@ -24,6 +24,7 @@ body{
 a, a:visited, a:active{
 	color: $anchor-color;
 	text-decoration: underline;
+	@include transition(color .2s ease);
 }
 
 a:hover{

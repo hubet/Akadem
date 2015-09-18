@@ -12,25 +12,30 @@
 		margin: 24px 0 10px 0;
 	}
 
-	ul{
-		list-style: none;
-		@include normal-font-size();
-		margin-bottom: $main-layout-margin;
+	.row {
+		ul{
+			list-style: none;
+			@include normal-font-size();
+			margin-bottom: $main-layout-margin;
 
-		li{
-			line-height: $normal-line-height + 3px;
+			&:last-child{
+				margin-bottom: 0;
+			}
 
-			a, a:active, a:visited{
-				text-decoration: none;
-				display: inline-block;
-				color: $color-silver-grey;
-				@include transition(color .2s ease);
+			li{
+				line-height: $normal-line-height + 3px;
 
-				&:hover{
-					color:#fff;
-				}
-			}	
-		}
+				a, a:active, a:visited{
+					text-decoration: none;
+					display: inline-block;
+					color: $color-silver-grey;
+
+					&:hover{
+						color:#fff;
+					}
+				}	
+			}
+		}		
 	}
 
 	@include tablet-landscape-and-below{
