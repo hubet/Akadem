@@ -1792,7 +1792,7 @@ body .container {
 @media only screen and (max-width: 480px) {
   /* line 3, ../scss/molecules/_jumbotrone.scss */
   .jumbotron {
-    height: 390px;
+    height: 220px;
   }
   /* line 67, ../scss/molecules/_jumbotrone.scss */
   .jumbotron .jumbotron-info-block {
@@ -2004,17 +2004,18 @@ body .container {
 
 /* line 3, ../scss/molecules/_breadcrumbs.scss */
 .breadcrumbs {
+  display: none;
   background: #272727;
   border-top: 1px solid #292929;
   font-size: 11px;
   line-height: 16px;
 }
-/* line 8, ../scss/molecules/_breadcrumbs.scss */
+/* line 9, ../scss/molecules/_breadcrumbs.scss */
 .breadcrumbs .container {
   padding-top: 10px;
   padding-bottom: 14px;
 }
-/* line 13, ../scss/molecules/_breadcrumbs.scss */
+/* line 14, ../scss/molecules/_breadcrumbs.scss */
 .breadcrumbs a {
   text-decoration: none;
 }

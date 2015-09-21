@@ -1,6 +1,7 @@
 
 
 .breadcrumbs{
+	display: none;
 	background: $color-shadow-black;
 	border-top: 1px solid #292929;
 	@include xsmall-font-size();
