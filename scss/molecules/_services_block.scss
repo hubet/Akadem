@@ -1,25 +1,48 @@
 .services-block{
 
 	.services-cell{
-		@include main-layout-padding(nochange);
+		@include main-layout-padding();
 
 		.sevices-heading{
 			position: relative;
 			color: $color-dust-grey;
-			margin: 0 0 5px;
+			margin: 0 0 15px;
 			width: 100%;
 			@include xnormal-font-size();
 		}
 
 		.services-icon{
 			position: absolute;
-			top: -3px;
-			left: -40px;
+			top: -2px;
+			display: inline-block;
 			font-size: 32px;
+		}
+
+		strong{
+			margin-left: 40px;
 		}
 
 		p{
 			margin: 0;
+		}
+	}
+
+
+	@include mobile-landscape-and-below{
+		.services-cell{
+			text-align: center;
+			padding-top: 0;
+
+			.services-icon{
+				position: static;
+				display: block;
+				margin: 0px auto;
+				font-size: 40px;
+			}
+
+			strong{
+				margin-left: 0px;
+			}
 		}
 	}
 }

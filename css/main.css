@@ -72,7 +72,7 @@ strong {
 /* line 29, ../scss/_typography.scss */
 h1 {
   font-size: 37px;
-  line-height: 45px;
+  line-height: 41px;
   font-weight: 900;
   color: #474747;
   margin: 0 0 23px 0;
@@ -81,7 +81,7 @@ h1 {
 /* line 36, ../scss/_typography.scss */
 h2 {
   font-size: 29px;
-  line-height: 41px;
+  line-height: 38px;
   font-weight: 900;
   color: #474747;
   margin: 19px 0 23px 0;
@@ -1786,7 +1786,7 @@ body .container {
   /* line 56, ../scss/molecules/_jumbotrone.scss */
   .jumbotron .jumbotron-info-block h1 {
     font-size: 46px;
-    line-height: 50px;
+    line-height: 48px;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -1801,7 +1801,7 @@ body .container {
   /* line 70, ../scss/molecules/_jumbotrone.scss */
   .jumbotron .jumbotron-info-block h1 {
     font-size: 37px;
-    line-height: 45px;
+    line-height: 41px;
   }
 }
 
@@ -1865,14 +1865,14 @@ body .container {
   display: block;
   margin-top: -5px;
   font-size: 46px;
-  line-height: 50px;
+  line-height: 48px;
   font-weight: 900;
 }
 @media only screen and (max-width: 992px) {
   /* line 41, ../scss/molecules/_promo_block.scss */
   .promo-block .price {
     font-size: 37px;
-    line-height: 45px;
+    line-height: 41px;
   }
 }
 /* line 51, ../scss/molecules/_promo_block.scss */
@@ -1905,11 +1905,17 @@ body .container {
 .services-block .services-cell {
   padding: 32px 40px 32px 40px;
 }
+@media only screen and (max-width: 480px) {
+  /* line 3, ../scss/molecules/_services_block.scss */
+  .services-block .services-cell {
+    padding: 32px 0;
+  }
+}
 /* line 6, ../scss/molecules/_services_block.scss */
 .services-block .services-cell .sevices-heading {
   position: relative;
   color: #474747;
-  margin: 0 0 5px;
+  margin: 0 0 15px;
   width: 100%;
   font-size: 19px;
   line-height: 26px;
@@ -1917,13 +1923,35 @@ body .container {
 /* line 14, ../scss/molecules/_services_block.scss */
 .services-block .services-cell .services-icon {
   position: absolute;
-  top: -3px;
-  left: -40px;
+  top: -2px;
+  display: inline-block;
   font-size: 32px;
 }
 /* line 21, ../scss/molecules/_services_block.scss */
+.services-block .services-cell strong {
+  margin-left: 40px;
+}
+/* line 25, ../scss/molecules/_services_block.scss */
 .services-block .services-cell p {
   margin: 0;
+}
+@media only screen and (max-width: 480px) {
+  /* line 32, ../scss/molecules/_services_block.scss */
+  .services-block .services-cell {
+    text-align: center;
+    padding-top: 0;
+  }
+  /* line 36, ../scss/molecules/_services_block.scss */
+  .services-block .services-cell .services-icon {
+    position: static;
+    display: block;
+    margin: 0px auto;
+    font-size: 40px;
+  }
+  /* line 43, ../scss/molecules/_services_block.scss */
+  .services-block .services-cell strong {
+    margin-left: 0px;
+  }
 }
 
 /* line 2, ../scss/molecules/_important_block.scss */
@@ -1963,14 +1991,14 @@ body .container {
   /* line 21, ../scss/molecules/_important_block.scss */
   .important-block .important-block-padding .important-block-header {
     font-size: 46px;
-    line-height: 50px;
+    line-height: 48px;
   }
 }
 @media only screen and (max-width: 480px) {
   /* line 21, ../scss/molecules/_important_block.scss */
   .important-block .important-block-padding .important-block-header {
     font-size: 37px;
-    line-height: 45px;
+    line-height: 41px;
   }
 }
 /* line 35, ../scss/molecules/_important_block.scss */
