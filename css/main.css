@@ -2053,3 +2053,10 @@ body .container {
     display: none;
   }
 }
+
+/* line 3, ../scss/molecules/_product-gallery.scss */
+.product-gallery img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
