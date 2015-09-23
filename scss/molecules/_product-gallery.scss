@@ -1,8 +1,39 @@
-.product-gallery{
+$gallery-gutter: 5px;
 
+
+
+.product-gallery{
+	border: 1px solid $color-steel-grey;
+	background-color: #fff;
+	overflow: hidden;
+
+	.big-img{
+		margin: 0 0 $small-layout-margin - $gallery-gutter 0;
+
+		img{
+			border: 0px;
+		}
+	}
+
+	ul.images-list{
+		padding: 0 $small-layout-margin - $gallery-gutter $small-layout-margin - $gallery-gutter $small-layout-margin - $gallery-gutter;
+		
+
+		li{
+			padding: $gallery-gutter;
+			@include transition(all, 0.5s, ease-in-out);
+		}
+	}
+
+	// For all gallery images
 	img{
 	display: block;
 	width: 100%;
 	height: auto;
+	border: 1px solid #dedede;
 	}
+}
+
+.product-gallery-margin{
+	margin: $xnormal-font-size + 9px 0 $big-font-size 0;
 }

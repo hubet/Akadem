@@ -37,17 +37,17 @@ body {
   line-height: 1;
 }
 
-/*
+/* line 36, ../scss/_reset.scss */
 ol, ul {
   list-style: none;
 }
-*/
-/* line 41, ../scss/_reset.scss */
+
+/* line 40, ../scss/_reset.scss */
 blockquote, q {
   quotes: none;
 }
 
-/* line 44, ../scss/_reset.scss */
+/* line 43, ../scss/_reset.scss */
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
@@ -59,12 +59,12 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }*/
-/* line 54, ../scss/_reset.scss */
+/* line 53, ../scss/_reset.scss */
 img {
   border: 0;
 }
 
-/* line 58, ../scss/_reset.scss */
+/* line 57, ../scss/_reset.scss */
 strong {
   font-weight: bold;
 }
@@ -2054,9 +2054,42 @@ body .container {
   }
 }
 
-/* line 3, ../scss/molecules/_product-gallery.scss */
+/* line 5, ../scss/molecules/_product-gallery.scss */
+.product-gallery {
+  border: 1px solid #aaaaaa;
+  background-color: #fff;
+  overflow: hidden;
+}
+/* line 10, ../scss/molecules/_product-gallery.scss */
+.product-gallery .big-img {
+  margin: 0 0 20px 0;
+}
+/* line 13, ../scss/molecules/_product-gallery.scss */
+.product-gallery .big-img img {
+  border: 0px;
+}
+/* line 18, ../scss/molecules/_product-gallery.scss */
+.product-gallery ul.images-list {
+  padding: 0 20px 20px 20px;
+}
+/* line 22, ../scss/molecules/_product-gallery.scss */
+.product-gallery ul.images-list li {
+  padding: 5px;
+  -webkit-transition: all, 0.5s, ease-in-out;
+  -moz-transition: all, 0.5s, ease-in-out;
+  -ms-transition: all, 0.5s, ease-in-out;
+  -o-transition: all, 0.5s, ease-in-out;
+  transition: all, 0.5s, ease-in-out;
+}
+/* line 29, ../scss/molecules/_product-gallery.scss */
 .product-gallery img {
   display: block;
   width: 100%;
   height: auto;
+  border: 1px solid #dedede;
+}
+
+/* line 37, ../scss/molecules/_product-gallery.scss */
+.product-gallery-margin {
+  margin: 28px 0 23px 0;
 }
